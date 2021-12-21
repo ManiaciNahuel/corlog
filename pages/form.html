@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="keywords" content="Encomienda, Envío, Destinos, Transporte, Logistica">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!-- Title  -->
+    <title>PRUEBA COTIZ</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon.ico">
+    <!-- Descripción -->
+    <meta name="description" content="Te ayudamos a resolver cualquier tipo de duda que puedas tener con respecto a nuestros servicios.">
+
+</head>
+
+<body>
+    <!-- Encabezado fijo-->
+    <header id="arriba">
+        <a href="../index.html"><img class="logo" src="../media/logo.png" alt="Logo corlog"></a>
+
+        <nav>
+            <ul class="flexMenu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="seguimiento.html">Seguir envío</a>
+                    <div class="hoverSeguimiento">Realizá el seguimiento de tus <br> encomiendas enviadas por Corlog</div>
+                </li>
+                <li><a href="cotizacion.html">Cotizar envío</a></li>
+                <li><a href="destinos.html">Destinos</a>
+                    <div class="hoverDestinos">Conoce todos los puntos del<br> país a los que llegamos</div>
+                </li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h1 class="textAlignCenter cot naranja">COTIZACIÓN</h1>
+    <!-- <form>
+        <div class="form-row">
+            <div class=" col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class=" col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+        </div>
+        <div class="">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+            <div class=" col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class=" col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+            </div>
+            <div class=" col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+        <div class="">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form> -->
+    <form class="containerCot" action="https://formsubmit.co/af91871a87f9f0d40fd68429f3ba593c" method="post">
+        <section class="descripcion textAlignCenter">
+            <h3>Para realizar la cotizacion de tu envío debes tener en cuenta la siguiente información: </h3>
+            <ul>
+                <li>Cantidad de bultos: Especifique la cantidad de bultos que desea enviar.</li>
+                <li>Tamaño: Medidas en cm del alto, ancho y profundidad.</li>
+                <li>Peso: Peso aproximado de los bultos en kg.</li>
+                <li>Valor Declarado : El valor declarado es el costo que quieres asegurar tu envio, para el caso hipotetico que tenga un sinistro (robo o hurto) y no llegue a destino</li>
+                <li>Localidad origen: Detalle desde que localidad del país va a enviar y si necesita que retiren el o los bultos por algún domicilio en particular o lo acercará a nuestra sucursal más cercana.</li>
+                <li>Localidad destino: Detalle a qué localidad del país va a enviar y si necesita que le entreguen el o los bultos por algún domicilio en particular o lo retirará en nuestra sucursal más cercana.</li>
+            </ul>
+        </section>
+        <section class="preguuuntas form-row">
+            <!-- Subject -->
+            <input type="hidden" name="_subject" value="Cotización online">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Preguntas -->
+            <div class=" col-md-6">
+                <label for="Correo">Ingrese su correo electrónico:</label>
+                <input class="form-control" type="email" name="Correo" placeholder="Tu Mail" required>
+            </div>
+            <div class=" col-md-6">
+                <label for="Telefono">Número de teléfono:</label>
+                <div>Ingrese su número de télefono celular</div>
+                <input class="form-control" type="text" name="Telefono" placeholder="351 1111 111" required>
+            </div>
+            <div class=" col-md-6">
+                <label for="Bultos">Cantidad de bultos: <img class="img_info" src="../media/icons8-info-20.png" alt="info"></label>
+                <input class="form-control" type="text" name="Bultos" required>
+            </div>
+            <div class=" col-md-6">
+                <label for="Peso">Peso (en Kg): <img class="img_info" src="../media/icons8-info-22.png" alt="info"></label>
+                <input class="form-control" type="text" name="Peso" required>
+            </div>
+            <div class=" col-md-6 selfAlign">
+                <label for="tipoBulto">Tipo de bulto:<img class="img_info" src="../media/icons8-info-24.png" alt="info"> </label>
+                <select name="tipoBulto" class="ffform-select">
+                <option selected>Choose...</option>
+                <option value="Sobre">Sobre</option>
+                <option value="Paquete">Paquete</option>
+                <option value="Bolsa">Bolsa</option>
+                <option value="Caja">Caja</option>
+                <option value="Mueble">Mueble</option>
+                <option value="Otro">Otro (especifique)</option>
+            </select required> 
+            </div>
+            <div class=" col-md-6">
+                <label for="Otro">Otro:<img class="img_info" src="../media/icons8-info-244.png" alt="info"></label>
+                <input class="form-control" type="text" name="Otro">
+            </div>
+            <div class=" col-md-6">   
+                <label for="Medidas">Medidas (en cm): </label>
+                <input class="form-control" type="text" name="Medidas" required>
+            </div>
+            <div class=" col-md-6">   
+                <label for="Valor Declarado">Valor Declarado (en $AR): </label>
+                <input class="form-control" type="text" name="Valor Declarado" required>
+            </div>
+            <div class=" col-md-6">
+                <label for="provinciaOrigen">Provincia de origen del envío: </label>
+                <select name="provinciaOrigen" class="ffform-select">
+                    <option value="choose">...</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Capital Federal">Capital Federal</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                </select required> 
+            </div>
+            <div class=" col-md-6">
+                <label for="localidadOrigen">Localidad del origen del envío: </label>
+                <input class="form-control" type="text" name="localidadOrigen" required> 
+            </div>
+            <div class=" col-md-6">
+                <label for="provinciaDestino">Provincia de destino del envío: </label>
+                <select name="provinciaDestino" class="ffform-select">
+                    <option value="choose">...</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Capital Federal">Capital Federal</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                </select required> 
+            </div>
+            <div class=" col-md-6">
+                <label for="localidadDestino">Localidad de destino del envío: </label>
+                <input class="form-control" type="text" name="localidadDestino" required> 
+            </div>
+            <div class=" col-md-12">   
+                <label for="Extra">Información extra, detalles, observaciones: </label>
+                <input class="form-control" type="text" name="Extra">
+            </div>
+            
+
+            <!-- Enviar -->
+            <div class="boton">
+                <input class="boton-hijo" type="reset" value="Borrar datos">
+                <input class="boton-hijo" type="submit" value="Enviar datos">
+
+            </div>
+            <!-- NEXT -->
+            <input type="hidden" name="_next" value="https://maniacinahuel.github.io/proyecto-corlog/index.html">
+        </section>
+
+
+    </form>
+</body>
+
+</html>

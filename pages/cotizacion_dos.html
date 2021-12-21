@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="keywords" content="Encomienda, Envío, Destinos, Transporte, Logistica">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!-- Title  -->
+    <title>PRUEBA COTIZ</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon.ico">
+    <!-- Descripción -->
+    <meta name="description" content="Te ayudamos a resolver cualquier tipo de duda que puedas tener con respecto a nuestros servicios.">
+
+
+</head>
+
+<body>
+    <!-- Encabezado fijo-->
+    <header id="arriba">
+        <a href="../index.html"><img class="logo" src="../media/new_logo.png" alt="Logo corlog"></a>
+        <h1>CORLOG ARGENTINA</h1>
+        <nav>
+            <ul class="flexMenu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="seguimiento.html">Seguir envío</a>
+                    <div class="hoverSeguimiento">Realizá el seguimiento de tus <br> encomiendas enviadas por Corlog</div>
+                </li>
+                <li><a href="cotizacion.html">Cotizar envío</a></li>
+                <li><a href="destinos.html">Destinos</a>
+                    <div class="hoverDestinos">Conoce todos los puntos del<br> país a los que llegamos</div>
+                </li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h2 class="textAlignCenter cot naranja">COTIZACIÓN</h2>
+    <form class="containerCot" action="https://formsubmit.co/af91871a87f9f0d40fd68429f3ba593c" method="post">
+        <section class="descripcion textAlignCenter">
+            <h3>Para realizar la cotizacion de tu envío debes tener en cuenta la siguiente información: </h3>
+            <ul>
+                <li>Cantidad de bultos: Especifique la cantidad de bultos que desea enviar.</li>
+                <li>Tamaño: Medidas en cm del alto, ancho y profundidad.</li>
+                <li>Peso: Peso aproximado de los bultos en kg.</li>
+                <li>Valor Declarado : El valor declarado de lo que envía en pesos argentinos. El VD mínimo es $1.000 y el máximo es $50.000.</li>
+                <li>Localidad origen: Detalle desde que localidad del país va a enviar y si necesita que retiren el o los bultos por algún domicilio en particular o lo acercará a nuestra sucursal más cercana.</li>
+                <li>Localidad destino: Detalle a qué localidad del país va a enviar y si necesita que le entreguen el o los bultos por algún domicilio en particular o lo retirará en nuestra sucursal más cercana.</li>
+            </ul>
+        </section>
+        <section class="preguuuntas form-row">
+            <!-- Subject -->
+            <input type="hidden" name="_subject" value="Cotización online">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Preguntas -->
+            <label for="Correo">Ingrese su correo electrónico:</label>
+            <input type="email" name="Correo" placeholder="Tu Mail" required>
+            <label for="Telefono">Número de teléfono:</label>
+            <input type="text" name="Telefono" placeholder="351 1111 111" required>
+            <label for="Bultos">Cantidad de bultos: </label>
+            <input type="text" name="Bultos" required>
+            <label for="tipoBulto">Tipo de bulto: </label>
+            <select name="tipoBulto" class="form-select">
+                <option selected>Choose...</option>
+                <option value="Sobre">Sobre</option>
+                <option value="Paquete">Paquete</option>
+                <option value="Bolsa">Bolsa</option>
+                <option value="Caja">Caja</option>
+                <option value="Mueble">Mueble</option>
+                <option value="Otro">Otro (especificar abajo) </option>
+            </select required> 
+            <textarea type="text" cols="50" rows="4"></textarea> 
+            <label for="Peso">Peso aproximado total del envío (en Kilogramos): </label>
+            <input type="text" name="Peso" required> 
+            <label for="provinciaOrigen">Provincia de origen del envío: </label>
+            <select name="provinciaOrigen" class="form-select">
+                <option value="choose">...</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Capital Federal">Capital Federal</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+            </select required> 
+            <label for="localidadOrigen">Localidad del origen del envío (puede detallar la localidad o el código postal): </label>
+            <input type="text" name="localidadOrigen" required> 
+            <label for="provinciaDestino">Provincia de destino del envío: </label>
+            <select name="provinciaDestino" class="form-select">
+                <option value="choose">...</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Capital Federal">Capital Federal</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+            </select required> 
+            <label for="localidadDestino">Localidad de destino del envío (puede detallar la localidad o el código postal): </label>
+            <input type="text" name="localidadDestino" required> 
+           <label for="Valor Declarado">Valor Declarado del envío: </label>
+           <input type="text" name="Valor Declarado" required>
+            
+            <!-- last -->
+            <input type="submit" value="Enviar datos">
+            <input type="reset" value="Limpiar formulario">
+            <!-- NEXT -->
+            <input type="hidden" name="_next" value="https://maniacinahuel.github.io/proyecto-corlog/index.html">
+        </section>
+
+
+    </form>
+</body>
+
+</html>
