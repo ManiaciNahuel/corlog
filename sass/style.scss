@@ -1,7 +1,7 @@
 @import "../bootstrap_sass/css/bootstrap.css";
 @import "boostrap.scss";
 // Colores //
-$primario: #FD7F52;
+$primario: #f86531;
 $secundario: #ffcd80;
 $terciario: #53B3FF;
 $fondo: #FFFFFD;
@@ -265,18 +265,49 @@ tr {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    transition: all 10s;
+    transition: all 2s;
+    gap: 8px;
     .accordion-body {
         display: flex;
         flex-direction: row;
+        padding: 0rem 1.25rem;
+    }
+    .accordion-button:not(.collapsed) {
+        color: black;
+        background-color: $fondo;
+        box-shadow: none;
+    }
+    .accordion-body:active {
+        width: 1000px;
+    }
+    .accordion-item {
+        border: 2px solid $secundario;
+    }
+    .accordion-button:focus {
+        z-index: 3;
+        outline: 0;
+        box-shadow: 0 0 0 0;
+        border: 0px solid white;
+    }
+    .accordion-button:not(.collapsed) {
+        color: $primario;
+        font-size: 220%;
+    }
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD7F52'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        transform: rotate(-180deg);
     }
     div {
         button {
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-            width: 500px;
             padding: 20px 50px;
+            width: 400px;
+            p {
+                margin: 0px;
+                font-size: 20px;
+            }
         }
         iframe {
             margin: 10px;
@@ -294,6 +325,9 @@ tr {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
+
+/* Hamburger menu */
 
 .hamburger-menu {
     margin-top: 20px;
@@ -521,7 +555,10 @@ select {
 
 /* Map */
 
-$redes:("instagram": rgb(143, 47, 114), "facebook": rgb(31, 32, 119), "whatsapp": rgb(23, 167, 43), "mail": rgb(158, 36, 36));
+$redes:("instagram": rgb(143, 47, 114),
+"facebook": rgb(31, 32, 119),
+"whatsapp": rgb(23, 167, 43),
+"mail": rgb(158, 36, 36));
 
 /* Each */
 

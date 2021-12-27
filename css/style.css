@@ -360,7 +360,7 @@ header {
   height: 185px;
   background-color: #FFFFFD;
   z-index: 10;
-  border-bottom: solid 3px #FD7F52;
+  border-bottom: solid 3px #f86531;
   border-radius: 3px;
   grid-area: header; }
 
@@ -416,13 +416,13 @@ nav a:hover + div {
   color: #F3F3F3; }
 
 .flexMenu li a:hover {
-  background-color: #FD7F52;
+  background-color: #f86531;
   color: #F3F3F3;
-  border: solid #FD7F52 0.4rem;
+  border: solid #f86531 0.4rem;
   transform: translate(120px, 50%); }
 
 .naranja {
-  color: #FD7F52; }
+  color: #f86531; }
 
 .letraGrande {
   font-size: 130%; }
@@ -464,7 +464,7 @@ table {
   width: 97vw; }
 
 tr td {
-  border: 2px solid #FD7F52;
+  border: 2px solid #f86531;
   padding: 20px; }
 
 .textoCotizacion {
@@ -495,16 +495,40 @@ tr td {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  transition: all 10s; }
+  transition: all 2s;
+  gap: 8px; }
   .sucursales .accordion-body {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    padding: 0rem 1.25rem; }
+  .sucursales .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: #FFFFFD;
+    box-shadow: none; }
+  .sucursales .accordion-body:active {
+    width: 1000px; }
+  .sucursales .accordion-item {
+    border: 2px solid #ffcd80; }
+  .sucursales .accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    border: 0px solid white; }
+  .sucursales .accordion-button:not(.collapsed) {
+    color: #f86531;
+    font-size: 220%; }
+  .sucursales .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD7F52'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg); }
   .sucursales div button {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 500px;
-    padding: 20px 50px; }
+    padding: 20px 50px;
+    width: 400px; }
+    .sucursales div button p {
+      margin: 0px;
+      font-size: 20px; }
   .sucursales div iframe {
     margin: 10px;
     width: 50vw;
@@ -517,6 +541,7 @@ tr td {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr; }
 
+/* Hamburger menu */
 .hamburger-menu {
   margin-top: 20px;
   width: 50px;
@@ -587,12 +612,12 @@ section div a div h2 {
   padding: 5px; }
 
 section div a div:hover {
-  border: solid 2px #FD7F52;
+  border: solid 2px #f86531;
   border-radius: 10px;
-  background-color: #FD7F52; }
+  background-color: #f86531; }
   section div a div:hover h2 {
     color: white;
-    background-color: #FD7F52; }
+    background-color: #f86531; }
   section div a div:hover p {
     color: #d34410;
     font: bold; }
@@ -638,7 +663,7 @@ section div a div img {
 .animacion {
   transition: background-color 3s; }
   .animacion:hover {
-    background-color: #FD7F52;
+    background-color: #f86531;
     transform: scale(1.2, 1.2); }
 
 /* Footer */
@@ -649,7 +674,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 15px 35px 15px 15px;
-  border: 2px solid #FD7F52;
+  border: 2px solid #f86531;
   border-radius: 8px;
   grid-area: pie; }
   footer div {
@@ -905,7 +930,7 @@ label {
       display: inline-block;
       margin-top: 50px;
       margin-bottom: 1px;
-      color: #FD7F52; }
+      color: #f86531; }
     header p {
       position: absolute;
       margin-top: 40px;
