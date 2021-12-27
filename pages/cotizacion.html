@@ -23,16 +23,26 @@
 <body>
     <!-- Bottom Whatsapp -->
     <a href="https://web.whatsapp.com/send?phone=+5493517045448&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..." target="_blank"><img class="whatsapp" src="../media/WhatsApp.png" alt="logoWhatsapp"></a>
-    <!-- Top Left Box -->
-    <img src="../media/boxx.png" alt="" class="cajas">
-    <!-- Redes -->
-    <a href="https://www.instagram.com/corlogargentina/"> <img class="inst" src="../media/instagram.png" alt=""></a>
-    <a href="https://web.whatsapp.com/send?phone=+5493517045448&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..." target="_blank"><img class="wapp" src="../media/wapp.png" alt="logoWhatsapp"></a>
-    <a href="https://www.facebook.com/corlogargentina"> <img class="face" src="../media/facebook.png" alt=""></a>
-    <a href="mailto:nahuelmaniaci@gmail.com"><img class="gmail" src="../media/gmail.png" alt=""></a>
     <!-- Encabezado fijo-->
     <header id="arriba">
-        <a href="../index.html"><img class="logo" src="../media/logo.png" alt="Logo corlog"></a>
+        <!-- Top Left Box -->
+        <img src="../media/header/boxx.png" alt="" class="cajas">
+        <!-- Redes -->
+        <ul class="social">
+            <li>
+                <a href="https://www.instagram.com/corlogargentina/" target="_blank"> <img src="../media/header/instagram.png" alt=""></a>
+            </li>
+            <li>
+                <a href="https://web.whatsapp.com/send?phone=+5493517045448&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..." target="_blank"><img src="../media/header/wapp.png" alt="logoWhatsapp"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/corlogargentina" target="_blank"> <img src="../media/header/facebook.png" alt=""></a>
+            </li>
+            <li>
+                <a href="mailto:nahuelmaniaci@gmail.com" target="_blank"><img src="../media/header/gmail.png" alt=""></a>
+            </li>
+        </ul>
+        <a href="../index.html"><img class="logo" src="../media/header/logo.png " alt="Logo corlog"></a>
         <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
         <nav>
             <ul class="flexMenu">
@@ -50,7 +60,7 @@
     </header>
     <br>
     <main>
-        <h1 class="textAlignCenter cot naranja">COTIZACIÓN</h1>
+        <h1 class="textAlignCenter naranja">COTIZACIÓN</h1>
 
         <form class="containerCot" action="https://formsubmit.co/af91871a87f9f0d40fd68429f3ba593c" method="post">
             <section class="descripcion textAlignCenter">
@@ -66,6 +76,8 @@
                 <input type="text" name="_honey" style="display: none;">
                 <!-- Disable Captcha -->
                 <input type="hidden" name="_captcha" value="false">
+                <!-- Titulo -->
+                <h3 class="col-md-12  textAlignCenter">ENCOMIENDAS</h3>
                 <!-- Preguntas -->
                 <div class=" col-md-6">
                     <label for="Correo">Ingrese su correo electrónico:</label>
@@ -199,6 +211,41 @@
                 </div>
 
 
+                <!-- Enviar -->
+                <div class="boton">
+                    <input class="boton-hijo" type="reset" value="Borrar datos">
+                    <input class="boton-hijo" type="submit" value="Enviar datos">
+
+                </div>
+                <!-- NEXT -->
+                <input type="hidden" name="_next" value="https://maniacinahuel.github.io/proyecto-corlog/index.html">
+            </section>
+
+        </form>
+        <section class="descripcion textAlignCenter">
+            <h3>Para realizar la cotización de una mudanza debes tener en cuenta la siguiente información: </h3>
+            <p>
+            </p>
+        </section>
+        <form class="containerCot" action="https://formsubmit.co/af91871a87f9f0d40fd68429f3ba593c" method="post">
+            <section class="preguntas form-row">
+                <!-- Subject -->
+                <input type="hidden" name="_subject" value="Cotización online">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Titulo -->
+                <h3 class="col-md-12  textAlignCenter">MUDANZA</h3>
+                <!-- Preguntas -->
+                <div class=" col-md-6">
+                    <label for="Correo">Ingrese su correo electrónico:</label>
+                    <input class="form-control" type="email" name="Correo" placeholder="Tu Mail" required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="Teléfono">Número de teléfono:</label>
+                    <input class="form-control" type="tel" name="Telefono" placeholder="351 1111 111" required>
+                </div>
                 <!-- Enviar -->
                 <div class="boton">
                     <input class="boton-hijo" type="reset" value="Borrar datos">
