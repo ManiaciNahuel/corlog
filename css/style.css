@@ -316,7 +316,7 @@ body {
   box-sizing: border-box; }
 
 main {
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-left: 2px; }
 
 a {
@@ -338,11 +338,15 @@ a:hover {
 
 h2 {
   display: block;
-  font-size: 1.5em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-weight: bold;
+  font-size: 27.4px;
+  color: #f86531; }
+
+h3 {
   font-weight: bold; }
 
 /* Encabezado */
@@ -351,13 +355,13 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   width: 400px;
-  height: 95px;
+  height: 102px;
   padding: 10px; }
 
 header {
   position: fixed;
   width: 100%;
-  height: 135px;
+  height: 145px;
   background-color: #FFFFFD;
   z-index: 10;
   border-bottom: solid 3px #f86531;
@@ -488,7 +492,8 @@ tr td {
   list-style-position: inside; }
 
 .destinos {
-  margin: 20px; }
+  margin: 20px;
+  margin-top: 0; }
 
 .sucursales {
   display: flex;
@@ -544,24 +549,37 @@ tr td {
 /* Hamburger menu */
 .hamburger-menu {
   margin-top: 20px;
-  width: 50px;
-  height: 6px;
-  background: #c56868;
-  position: relative; }
+  width: 53px;
+  height: 0px;
+  background: #ff7746;
+  position: fixed;
+  top: 16px;
+  left: 14px;
+  z-index: 11;
+  border-radius: 6px;
+  padding: 5px 20px; }
 
 .hamburger-menu::before,
 .hamburger-menu::after {
   content: "";
+  padding: 5px 20px;
   position: absolute;
-  width: 50px;
-  height: 6px;
-  background: #9b2222; }
+  width: 31px;
+  height: 0px;
+  border-radius: 6px;
+  background: #ff7746;
+  z-index: 11; }
 
 .hamburger-menu::before {
-  top: -16px; }
+  top: -16px;
+  left: 7px; }
 
 .hamburger-menu::after {
-  top: 16px; }
+  top: 16px;
+  left: 7px; }
+
+.a-logo {
+  z-index: 1; }
 
 /* Arreglo del boostrap - generaba un scroll */
 .row {
@@ -699,11 +717,6 @@ select {
 
 /* Grid AYUDA */
 #titulo {
-  /* margin-top: 50px;
-    margin-bottom: 20px;
-    padding-bottom: 20px; */
-  font-size: xx-large;
-  /* padding-top: 20px; */
   text-align: center;
   justify-self: stretch;
   grid-area: h2; }
@@ -787,7 +800,7 @@ select {
 .containerAyuda {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
-  grid-template-rows: 1fr 0.4fr 0.5fr repeat(3, 0.75fr) auto;
+  grid-template-rows: 0.85fr 0.4fr 0.5fr repeat(3, 0.75fr) auto;
   gap: 20px 15px;
   grid-template-areas: "header header header" "h2 h2 h2" "redes form form" "redes form form" "redes form form" "redes form form" "pie pie pie"; }
 

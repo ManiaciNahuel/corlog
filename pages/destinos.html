@@ -8,14 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
     <meta name="keywords" content="Encomienda, Envío, Destinos, Transporte, Logistica">
+    <!-- Estílos -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <!-- Animacion -->
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css">
     <!-- Title  -->
+
     <title>Corlog - Destinos</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon.ico">
@@ -30,7 +33,30 @@
     <!-- Encabezado fijo-->
     <header id="arriba">
         <!-- Top Left Box -->
-        <img src="../media/header/boxx.png" alt="" class="cajas">
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <div class="hamburger-menu"></div>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- Redes -->
         <ul class="social">
             <li>
@@ -46,7 +72,8 @@
                 <a href="mailto:nahuelmaniaci@gmail.com" target="_blank"><img src="../media/header/gmail.png" alt=""></a>
             </li>
         </ul>
-        <a href="../index.html"><img class="logo" src="../media/header/logo.png" alt="Logo corlog"></a>
+        <!-- Logo -->
+        <a class="a-logo" href="../index.html"><img class="logo" src="../media/header/logo.png" alt="Logo corlog"></a>
         <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
         <nav>
             <ul class="flexMenu">
@@ -66,7 +93,7 @@
     <!-- Lista de localidades -->
     <main class="destinos">
         <div class="letraGrande">
-            <h2 class="naranja textAlignCenter">Nuestros Destinos Corlog Argentina</h2>
+            <h2 class="textAlignCenter">DESTINOS CORLOG ARGENTINA</h2>
             <ul class="localidades">
                 <li> Buenos Aires: CABA y alrededores </li>
                 <li> Córdoba Cápital </li>
@@ -75,7 +102,7 @@
                 <li> San Fernando del Valle de Catamarca </li>
                 <li> La Rioja </li>
             </ul>
-            <h2 class="naranja textAlignCenter">Nuestras Sucursales</h2>
+            <h2 class="naranja textAlignCenter">NUESTRAS SUCURSALES</h2>
         </div>
 
         <div class="accordion sucursales">
@@ -90,7 +117,7 @@
                         <div class="accordionContainer">
                             <div>
                                 <H4>DIRECCION</H4>
-                                <p>Av Colon 2306 – B° Alto Alberdi</p>
+                                <p>Av Colon 2306 - B° Alto Alberdi</p>
                             </div>
                             <div>
                                 <h4>HORARIOS</h4>
@@ -143,7 +170,7 @@
                         <div class="accordionContainer">
                             <div>
                                 <H4>DIRECCION</H4>
-                                <p>Constitución 680 – Centro</p>
+                                <p>Constitución 680 - Centro</p>
                             </div>
                             <div>
                                 <h4>HORARIOS</h4>
@@ -198,6 +225,7 @@
             </a>
         </div>
     </footer>
+    <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
     <script src="/boostrap/js/bootstrap.js"></script>
     <script src="/bootstrap_sass/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
