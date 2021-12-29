@@ -24,8 +24,66 @@
 
 <body>
     <header id="arriba" class="header-index">
-        <!-- Top Left Box -->
-        <img src="media/header/boxx.png" alt="" class="cajas">
+        <!-- Hamburger Menu -->
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <div class="hamburger-menu"></div>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title" id="offcanvasExampleLabel">CORLOG ARGENTINA</h2>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <p class="emoji-1">&#128310;</p>
+                            <p class="emoji-dos">&#128311;</p> Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/pages/seguimiento.html">
+                            <p class="emoji-1">&#128310;</p>
+                            <p class="emoji-dos">&#128311;</p> Seguir envío</a>
+                    </li>
+                    <li>
+                        <a href="/pages/cotizacion.html">
+                            <p class="emoji-1">&#128310;</p>
+                            <p class="emoji-dos">&#128311;</p> Cotizar envío</a>
+                    </li>
+                    <li>
+                        <a href="/pages/destinos.html">
+                            <p class="emoji-1">&#128310;</p>
+                            <p class="emoji-dos">&#128311;</p> Destinos</a>
+                    </li>
+                    <li>
+                        <a href="/pages/destinos.html">
+                            <p class="emoji-1">&#128310;</p>
+                            <p class="emoji-dos">&#128311;</p> Nuestras sucursales</a>
+                    </li>
+                    <li>
+                        <a href="/pages/ayuda.html">
+                            <p class="emoji-1">&#128310;</p>
+                            <p class="emoji-dos">&#128311;</p> Ayuda</a>
+                    </li>
+                    <li>
+                        <a href="/pages/nosotros.html">
+                            <p class="emoji-1">&#128310;</p>
+                            <p class="emoji-dos">&#128311;</p> Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="/pages/nosotros.html">
+                            <p class="emoji-1">&#128310;</p>
+                            <p class="emoji-dos">&#128311;</p> Servicios</a>
+                    </li>
+                    <li>
+                        <a href="/pages/ayuda.html">
+                            <p class="emoji-1">&#128310;</p>
+                            <p class="emoji-dos">&#128311;</p> Redes</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
         <!-- Redes -->
         <ul class="social">
             <li>
@@ -42,7 +100,9 @@
             </li>
         </ul>
         <!-- Logo -->
-        <a href="index.html"><img class="logo" src="media/header/logo.png" alt="Logo corlog"></a>
+        <div class="logo">
+            <a href="../index.html"><img class="logo-img" src="../media/header/logo.png" alt="Logo corlog"></a>
+        </div>
         <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
         <nav>
             <!-- Menú con enlaces -->

@@ -305,6 +305,7 @@
 
 /* General */
 body {
+  font-size: 1rem;
   background-color: #FFFFFD; }
   body section ul li {
     font-size: large; }
@@ -320,8 +321,11 @@ main {
   padding-left: 2px; }
 
 a {
-  color: #F0572F;
+  color: #f86531;
   text-decoration: none; }
+
+.a-cot {
+  color: #dd2224; }
 
 a:hover {
   color: #F0572F; }
@@ -343,7 +347,6 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  font-size: 27.4px;
   color: #f86531; }
 
 h3 {
@@ -351,9 +354,9 @@ h3 {
 
 /* Encabezado */
 .logo {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center; }
+
+.logo-img {
   width: 400px;
   height: 102px;
   padding: 10px; }
@@ -370,6 +373,91 @@ header {
 
 .header-index {
   margin-top: 16px; }
+
+/* Hamburger menu */
+.hamburger-menu {
+  margin: 20px 60px 0 0;
+  width: 53px;
+  height: 0px;
+  background: #ff7746;
+  position: fixed;
+  top: 16px;
+  left: 14px;
+  z-index: 11;
+  border-radius: 6px;
+  padding: 5px 20px; }
+
+.hamburger-menu::before,
+.hamburger-menu::after {
+  content: "";
+  padding: 5px 20px;
+  position: absolute;
+  width: 31px;
+  height: 0px;
+  border-radius: 6px;
+  background: #ff7746;
+  z-index: 11; }
+
+.hamburger-menu::before {
+  top: -16px;
+  left: 7px; }
+
+.hamburger-menu::after {
+  top: 16px;
+  left: 7px; }
+
+/* Hamburger Menu Body */
+.offcanvas-body li {
+  list-style-type: none; }
+  .offcanvas-body li a {
+    color: #000000;
+    font-size: 1.5rem; }
+    .offcanvas-body li a:hover {
+      color: #53B3FF; }
+      .offcanvas-body li a:hover .emoji-1 {
+        display: none; }
+      .offcanvas-body li a:hover .emoji-dos {
+        display: initial; }
+
+.emoji-1 {
+  display: initial; }
+
+.emoji-dos {
+  display: none; }
+
+.offcanvas {
+  position: fixed;
+  bottom: 0;
+  z-index: 1045;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  visibility: hidden;
+  background-color: #FFFFFD;
+  background-clip: padding-box;
+  outline: 0;
+  transition: transform 0.3s ease-in-out; }
+
+.offcanvas-start {
+  top: 0px;
+  left: 0px;
+  width: 360px;
+  transform: translateX(-100%);
+  border-right: 7px solid #f865319c;
+  border-end-end-radius: 150px; }
+
+.offcanvas-title {
+  padding-left: 8px; }
+
+.btn-close {
+  box-sizing: content-box;
+  color: #000;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 1;
+  width: 4rem;
+  height: 4rem;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat; }
 
 /* Menu items*/
 nav ul {
@@ -545,41 +633,6 @@ tr td {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr; }
-
-/* Hamburger menu */
-.hamburger-menu {
-  margin-top: 20px;
-  width: 53px;
-  height: 0px;
-  background: #ff7746;
-  position: fixed;
-  top: 16px;
-  left: 14px;
-  z-index: 11;
-  border-radius: 6px;
-  padding: 5px 20px; }
-
-.hamburger-menu::before,
-.hamburger-menu::after {
-  content: "";
-  padding: 5px 20px;
-  position: absolute;
-  width: 31px;
-  height: 0px;
-  border-radius: 6px;
-  background: #ff7746;
-  z-index: 11; }
-
-.hamburger-menu::before {
-  top: -16px;
-  left: 7px; }
-
-.hamburger-menu::after {
-  top: 16px;
-  left: 7px; }
-
-.a-logo {
-  z-index: 1; }
 
 /* Arreglo del boostrap - generaba un scroll */
 .row {
