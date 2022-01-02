@@ -340,6 +340,15 @@ a:hover {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
+.sr-only-pad {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding-top: 230px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
 h2 {
   display: block;
   margin-block-start: 0.83em;
@@ -490,7 +499,7 @@ nav a:hover + div {
   padding: 3px;
   display: none;
   position: absolute;
-  top: 11rem;
+  top: 8.5rem;
   left: 62%; }
 
 .hoverSeguimiento {
@@ -551,23 +560,14 @@ nav a:hover + div {
     width: 45px;
     height: 45px; }
 
-/* Tabla cotización */
-table {
-  width: 97vw; }
-
-tr td {
-  border: 2px solid #f86531;
-  padding: 20px; }
-
-.textoCotizacion {
-  display: none; }
-
-.italic {
-  font-style: italic; }
-
-.listStyleSquare {
-  list-style-position: outside;
-  list-style-type: square; }
+/* Cotización */
+.btn-info {
+  background-color: transparent;
+  border: none; }
+  .btn-info:hover {
+    background-color: white;
+    border: none;
+    border-radius: 11px; }
 
 /* Destinos */
 .localidades {
@@ -718,6 +718,18 @@ section div a div img {
   max-width: 860px;
   max-height: 500px; }
 
+/* Empresas */
+.empresas {
+  display: flex;
+  flex-direction: column; }
+  .empresas div img {
+    max-width: 250px;
+    max-height: 200px;
+    transition: background-color 3s;
+    padding: 20px; }
+    .empresas div img:hover {
+      transform: scale(1.2, 1.2); }
+
 /* Otros */
 .textArea {
   background-color: #f0562f2e; }
@@ -778,13 +790,15 @@ select {
 /* Map */
 /* Each */
 .red--instagram {
-  color: #8f2f72; }
+  color: #ca289a; }
   .red--instagram > a {
-    color: #8f2f72; }
+    color: #ca289a; }
 
 .red--instagram > a:hover {
-  background-color: #8f2f72;
-  color: white; }
+  background-color: #ca289a;
+  color: white;
+  border: 4px solid #ca289a;
+  border-radius: 4px; }
 
 .red--facebook {
   color: #1f2077; }
@@ -793,7 +807,9 @@ select {
 
 .red--facebook > a:hover {
   background-color: #1f2077;
-  color: white; }
+  color: white;
+  border: 4px solid #1f2077;
+  border-radius: 4px; }
 
 .red--whatsapp {
   color: #17a72b; }
@@ -802,16 +818,20 @@ select {
 
 .red--whatsapp > a:hover {
   background-color: #17a72b;
-  color: white; }
+  color: white;
+  border: 4px solid #17a72b;
+  border-radius: 4px; }
 
 .red--mail {
-  color: #9e2424; }
+  color: #b80000; }
   .red--mail > a {
-    color: #9e2424; }
+    color: #b80000; }
 
 .red--mail > a:hover {
-  background-color: #9e2424;
-  color: white; }
+  background-color: #b80000;
+  color: white;
+  border: 4px solid #b80000;
+  border-radius: 4px; }
 
 .redes {
   margin: 0 30px;
@@ -822,7 +842,8 @@ select {
   border-radius: 8px;
   grid-area: redes; }
   .redes ul {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-left: 0rem; }
 
 .form_ext, .form__info, .form__newsLetters, .form__crecer, #submit, .form, #nosotros, #mision, #servicios, #sucursales {
   padding: 5px;
@@ -864,7 +885,8 @@ select {
   grid-area: mis; }
 
 #servicios {
-  grid-area: ser; }
+  grid-area: ser;
+  padding-top: 200px; }
 
 #sucursales {
   grid-area: suc; }

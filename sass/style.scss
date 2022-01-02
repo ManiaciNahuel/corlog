@@ -56,6 +56,16 @@ a:hover {
     border: 0;
 }
 
+.sr-only-pad {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding-top: 230px;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 h2 {
     display: block;
     margin-block-start: 0.83em;
@@ -247,7 +257,7 @@ nav {
     padding: 3px;
     display: none;
     position: absolute;
-    top: 11rem;
+    top: 8.5rem;
     left: 62%;
 }
 
@@ -333,30 +343,16 @@ nav {
 }
 
 
-/* Tabla cotización */
+/* Cotización */
 
-table {
-    width: 97vw;
-}
-
-tr {
-    td {
-        border: 2px solid $primario;
-        padding: 20px;
+.btn-info {
+    background-color: transparent;
+    border: none;
+    &:hover {
+        background-color: white;
+        border: none;
+        border-radius: 11px;
     }
-}
-
-.textoCotizacion {
-    display: none;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.listStyleSquare {
-    list-style-position: outside;
-    list-style-type: square;
 }
 
 
@@ -557,6 +553,25 @@ section {
 }
 
 
+/* Empresas */
+
+.empresas {
+    display: flex;
+    flex-direction: column;
+    div {
+        img {
+            max-width: 250px;
+            max-height: 200px;
+            transition: background-color 3s;
+            padding: 20px;
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
+        }
+    }
+}
+
+
 /* Otros */
 
 .textArea {
@@ -639,18 +654,18 @@ select {
 
 /* Map */
 
-$redes:("instagram": rgb(143,
-47,
-114),
+$redes:("instagram": rgb(202,
+40,
+154),
 "facebook": rgb(31,
 32,
 119),
 "whatsapp": rgb(23,
 167,
 43),
-"mail": rgb(158,
-36,
-36));
+"mail": rgb(184,
+0,
+0));
 
 /* Each */
 
@@ -665,6 +680,8 @@ $color in $redes {
     .red--#{$red}>a:hover {
         background-color: $color;
         color: white;
+        border: 4px solid $color;
+        border-radius: 4px;
     }
 }
 
@@ -678,6 +695,7 @@ $color in $redes {
     grid-area: redes;
     ul {
         list-style-type: none;
+        padding-left: 0rem;
     }
 }
 
@@ -741,6 +759,7 @@ $color in $redes {
 #servicios {
     @extend.form_ext;
     grid-area: ser;
+    padding-top: 200px
 }
 
 #sucursales {

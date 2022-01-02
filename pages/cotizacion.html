@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
     <meta name="keywords" content="Encomienda, Envío, Destinos, Transporte, Logistica">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -175,16 +176,24 @@
                             <option value="Otro">Otro (especifique)</option>
                         </select> 
                 </div>
-                <div class=" col-md-6">
-                    <label for="Otro">Otro:
-                        <input class="form-control" type="text" name="Otro">
+                <div class=" col-md-6"> 
+                    <label for="Otro">Otro: 
+                        <button  type="button" class="btn-info" data-bs-toggle="tooltip" title='Sólo si seleccionó "Otro" en "Tipo de bulto"'>
+                            <img src="../media/icon-info.png" alt="">
+                          </button><input class="form-control" type="text" name="Otro">
                 </div>
                 <div class=" col-md-6">
-                    <label class="peso" for="Peso">Peso (en Kg):    
+                    <label class="peso" for="Peso">Peso (en Kg):
+                        <button  type="button" class="btn-info" data-bs-toggle="tooltip" title='El peso puede ser aproximado. Si envias más de un bulto tenes que poner la suma de los pesos de todos los bultos'>
+                            <img src="../media/icon-info.png" alt="">
+                          </button>
                     <input class="form-control" type="text" name="Peso" required>
                 </div>
                 <div class=" col-md-6">   
-                    <label for="Alto">Alto (en cm): </label>
+                    <label for="Alto">Alto (en cm):
+                    <button type="button" class="btn-info" data-bs-toggle="tooltip" title='Las medidas son aproximandas. Si envias más de un bulto y son todos de similar tamaño coloca las medidas de cualquiera. Pero si son de distintos tamaños coloca las medidas del más grandes '>
+                        <img src="../media/icon-info.png" alt="">
+                      </button>
                     <input class="form-control" type="text" name="Alto" required>
                 </div>
                 <div class=" col-md-6">
@@ -201,7 +210,9 @@
                     <input class="form-control" type="text" name="Valor&nbsp;Declarado" required>
                 </div>
                 <div class=" col-md-6">
-                    <label for="Extra">Información extra: </label>
+                    <label for="Extra">Información extra: <button  type="button" class="btn-info" data-bs-toggle="tooltip" title='Agrega información sobre el tamaño de los bultos, observaciones, o lo que consideres necesario'>
+                        <img src="../media/icon-info.png" alt="">
+                      </button>
                     <input class="form-control" type="text" name="Extra">
                 </div>
                 <div class=" col-md-6">
@@ -279,13 +290,13 @@
 
                 </div>
                 <!-- NEXT -->
-                <input type="hidden" name="_next" value="https://maniacinahuel.github.io/proyecto-corlog/index.html">
+                <input type="hidden" name="_next" value="next.html">
             </section>
 
         </form>
         <section class="descripcion textAlignCenter">
             <h3>Para realizar la cotización de una mudanza debes tener en cuenta la siguiente información: </h3>
-            <p>
+            <p> Al ser cada mudanza particular por tener bultos o muebles de distintas dimensiones, consideramos conveniente comunicarnos con usted y hacerle las consultas necesarias. Complete el siguiente formulario y nos pondremos en contacto a la brevedad.
             </p>
         </section>
         <form class="containerCot" action="https://formsubmit.co/af91871a87f9f0d40fd68429f3ba593c" method="post">
@@ -306,6 +317,72 @@
                 <div class=" col-md-6">
                     <label for="Teléfono">Número de teléfono:</label>
                     <input class="form-control" type="tel" name="Telefono" placeholder="351 1111 111" required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="Provincia&nbsp;Origen">Provincia de origen del envío: </label>
+                    <select name="Provincia&nbsp;Origen" class="ffform-select" required>
+                    <option value="">...</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Capital Federal">Capital Federal</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                </select>
+                </div>
+                <div class=" col-md-6">
+                    <label for="Localidad&nbsp;Origen">Localidad del origen del envío: </label>
+                    <input class="form-control" type="text" name="Localidad&nbsp;Origen" required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="Provincia&nbsp;Destino">Provincia de destino del envío: </label>
+                    <select name="Provincia&nbsp;Destino" class="ffform-select" required>
+                    <option value="">...</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Capital Federal">Capital Federal</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                </select>
+                </div>
+                <div class=" col-md-6">
+                    <label for="Localidad&nbsp;Destino">Localidad de destino del envío: </label>
+                    <input class="form-control" type="text" name="Localidad&nbsp;Destino" required>
                 </div>
                 <!-- Enviar -->
                 <div class="boton">
@@ -349,7 +426,18 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 
 </html>
