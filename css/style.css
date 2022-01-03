@@ -320,6 +320,14 @@ main {
   padding-top: 8rem;
   padding-left: 2px; }
 
+.mainCot {
+  width: 1360px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
 a {
   color: #f86531;
   text-decoration: none; }
