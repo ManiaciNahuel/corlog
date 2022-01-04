@@ -33,7 +33,7 @@ main {
 }
 
 .mainCot {
-    width: 1360px;
+    max-width: 1360px;
     display: flex;
     flex-direction: column;
     position: relative;
