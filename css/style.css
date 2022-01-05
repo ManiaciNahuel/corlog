@@ -306,7 +306,8 @@
 /* General */
 body {
   font-size: 1rem;
-  background-color: #FFFFFD; }
+  background-color: #FFFFFD;
+  height: 100%; }
   body section ul li {
     font-size: large; }
 
@@ -758,14 +759,14 @@ section div a div img {
 
 /* Footer */
 footer {
-  margin: 30px 15px 5px 15px;
+  margin: 30px 15px 35px 15px;
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 15px 35px 15px 15px;
   border: 2px solid #f86531;
-  border-radius: 8px;
+  border-radius: 55px;
   grid-area: pie; }
   footer div {
     margin: 5px 1rem 5px 1rem;
