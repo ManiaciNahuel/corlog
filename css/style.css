@@ -330,7 +330,7 @@ main {
   transform: translateX(-50%); }
 
 a {
-  color: #f86531;
+  color: #f86530;
   text-decoration: none; }
 
 .a-cot {
@@ -365,7 +365,7 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  color: #f86531; }
+  color: #f86530; }
 
 h3 {
   font-weight: bold; }
@@ -385,7 +385,7 @@ header {
   height: 145px;
   background-color: #FFFFFD;
   z-index: 10;
-  border-bottom: solid 3px #f86531;
+  border-bottom: solid 3px #f86530;
   border-radius: 3px;
   grid-area: header; }
 
@@ -394,35 +394,20 @@ header {
 
 /* Hamburger menu */
 .hamburger-menu {
-  margin: 20px 60px 0 0;
-  width: 53px;
-  height: 0px;
-  background: #ff7746;
   position: fixed;
-  top: 16px;
-  left: 14px;
-  z-index: 11;
-  border-radius: 6px;
-  padding: 5px 20px; }
+  margin: 17px; }
+  .hamburger-menu:hover .hamburger-menu-1, .hamburger-menu:hover .hamburger-menu-2 {
+    display: none; }
+  .hamburger-menu:hover .hamburger-menu-2 {
+    display: initial; }
 
-.hamburger-menu::before,
-.hamburger-menu::after {
-  content: "";
-  padding: 5px 20px;
-  position: absolute;
-  width: 31px;
-  height: 0px;
-  border-radius: 6px;
-  background: #ff7746;
-  z-index: 11; }
+.hamburger-menu-1, .hamburger-menu-2 {
+  display: initial;
+  width: 45px;
+  height: 45px; }
 
-.hamburger-menu::before {
-  top: -16px;
-  left: 7px; }
-
-.hamburger-menu::after {
-  top: 16px;
-  left: 7px; }
+.hamburger-menu-2 {
+  display: none; }
 
 /* Hamburger Menu Body */
 .offcanvas-body li {
@@ -431,7 +416,7 @@ header {
     color: #000000;
     font-size: 1.5rem; }
     .offcanvas-body li a:hover {
-      color: #53B3FF; }
+      color: #1fb6f4; }
       .offcanvas-body li a:hover .emoji-1 {
         display: none; }
       .offcanvas-body li a:hover .emoji-dos {
@@ -522,17 +507,17 @@ nav a:hover + div {
   display: block; }
 
 .boton-hijo:hover {
-  background-color: #53B3FF;
+  background-color: #1fb6f4;
   color: #F3F3F3; }
 
 .flexMenu li a:hover {
-  background-color: #f86531;
+  background-color: #f86530;
   color: #F3F3F3;
-  border: solid #f86531 0.4rem;
+  border: solid #f86530 0.4rem;
   transform: translate(120px, 50%); }
 
 .naranja {
-  color: #f86531; }
+  color: #f86530; }
 
 .letraGrande {
   font-size: 130%; }
@@ -617,7 +602,7 @@ nav a:hover + div {
     box-shadow: 0 0 0 0;
     border: 0px solid white; }
   .sucursales .accordion-button:not(.collapsed) {
-    color: #f86531;
+    color: #f86530;
     font-size: 220%; }
   .sucursales .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD7F52'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -692,12 +677,12 @@ section div a div h2 {
   padding: 5px; }
 
 section div a div:hover {
-  border: solid 2px #f86531;
+  border: solid 2px #f86530;
   border-radius: 10px;
-  background-color: #f86531; }
+  background-color: #f86530; }
   section div a div:hover h2 {
     color: white;
-    background-color: #f86531; }
+    background-color: #f86530; }
   section div a div:hover p {
     color: #d34410;
     font: bold; }
@@ -754,7 +739,7 @@ section div a div img {
 .animacion {
   transition: background-color 3s; }
   .animacion:hover {
-    background-color: #f86531;
+    background-color: #f86530;
     transform: scale(1.2, 1.2); }
 
 /* Footer */
@@ -765,7 +750,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 15px 35px 15px 15px;
-  border: 2px solid #f86531;
+  border: 2px solid #f86530;
   border-radius: 55px;
   grid-area: pie; }
   footer div {
@@ -997,7 +982,7 @@ label {
       display: inline-block;
       margin-top: 50px;
       margin-bottom: 1px;
-      color: #f86531; }
+      color: #f86530; }
     header p {
       position: absolute;
       margin-top: 40px;
@@ -1055,7 +1040,7 @@ label {
 /* Celulares */
 @media (max-width: 600px) {
   .logo-img {
-    max-width: 500px;
+    max-width: 320px;
     height: 90px;
     padding: 10px; }
   main {
@@ -1067,8 +1052,15 @@ label {
     border-radius: 3px;
     grid-area: header; }
   .hamburger-menu {
-    top: 88px;
-    position: absolute; }
+    top: 74px;
+    position: absolute;
+    left: 1px; }
+  .hamburger-menu-1, .hamburger-menu-2 {
+    display: initial;
+    width: 42px;
+    height: 42px; }
+  .hamburger-menu-2 {
+    display: none; }
   .social {
     margin-right: 10px;
     justify-content: space-evenly;
