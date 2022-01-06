@@ -462,31 +462,27 @@ nav {
 
 /* Tres opciones */
 
-.serviceContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 10px;
-    gap: 50px;
-    a {
-        div {
-            margin: 6px;
-            height: 300px;
-            width: 300px;
-            transition: all 1s;
-        }
-    }
-}
-
-section {
-    div {
+.page-section {
+    .serviceContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 10px;
+        row-gap: 70px;
+        column-gap: 30px;
         a {
+            border-radius: 48px;
             &:hover {
                 color: black;
             }
             div {
+                margin: 6px;
+                height: 300px;
+                width: 300px;
+                transition: all 2s;
+                border-radius: 121px;
                 p {
                     position: relative;
                     color: #2c2d2e;
@@ -495,18 +491,18 @@ section {
                 h2 {
                     color: black;
                     position: relative;
-                    top: -90px;
+                    top: -182px;
                     background-color: #feb645bd;
-                    border-radius: 3px;
+                    border-radius: 86px;
                     padding: 5px;
+                    margin: 19px;
                 }
                 &:hover {
-                    border: solid 2px $primario;
                     border-radius: 10px;
-                    background-color: $primario;
+                    background-color: #f86530cf;
                     h2 {
                         color: white;
-                        background-color: $primario;
+                        background-color: #f86530cf;
                     }
                     p {
                         color: #d34410;
@@ -514,12 +510,12 @@ section {
                     }
                 }
                 img {
-                    border-radius: 6px;
+                    border-radius: 150px;
                     position: relative;
                     width: 100%;
                     height: 100%;
+                    padding: 10px;
                     justify-content: end;
-                    /* padding: 8px; */
                 }
             }
         }
@@ -1058,5 +1054,6 @@ label {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 5px;
     }
 }
