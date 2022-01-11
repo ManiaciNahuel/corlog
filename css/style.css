@@ -1109,7 +1109,10 @@ label {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 8px; }
+    padding: 8px;
+    justify-content: center; }
+    .preguntas h3 {
+      width: 100%; }
   .sucursales {
     display: flex;
     flex-direction: row;
