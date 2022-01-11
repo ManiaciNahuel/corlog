@@ -1124,7 +1124,7 @@ label {
       flex-direction: column;
       padding: 0rem 1.25rem; }
     .sucursales .accordion-button {
-      width: 260px; }
+      width: 80vw; }
     .sucursales .accordion-button:not(.collapsed) {
       color: black;
       background-color: #FFFFFD;
@@ -1147,8 +1147,8 @@ label {
       transform: rotate(-180deg); }
     .sucursales div iframe {
       margin: 20px 0px;
-      width: 250px;
-      height: 260px;
+      width: 90vw;
+      height: 300px;
       align-self: center; }
   .accordionContainer {
     width: 100%;
