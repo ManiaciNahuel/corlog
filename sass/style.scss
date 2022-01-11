@@ -764,6 +764,15 @@ $color in $redes {
     grid-template-areas: "header header header" "h2 h2 h2" "redes form form" "redes form form" "redes form form" "redes form form" "pie pie pie";
 }
 
+input[type=submit] {
+    color: black;
+    -webkit-text-fill-color: black;
+    &:hover {
+        color: white;
+        -webkit-text-fill-color: white;
+    }
+}
+
 #nosotros {
     @extend.form_ext;
     grid-area: nos;

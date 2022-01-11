@@ -889,6 +889,13 @@ select {
   gap: 20px 15px;
   grid-template-areas: "header header header" "h2 h2 h2" "redes form form" "redes form form" "redes form form" "redes form form" "pie pie pie"; }
 
+input[type=submit] {
+  color: black;
+  -webkit-text-fill-color: black; }
+  input[type=submit]:hover {
+    color: white;
+    -webkit-text-fill-color: white; }
+
 #nosotros {
   grid-area: nos; }
 
