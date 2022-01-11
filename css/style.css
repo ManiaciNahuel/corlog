@@ -1124,7 +1124,7 @@ label {
       flex-direction: column;
       padding: 0rem 1.25rem; }
     .sucursales .accordion-button {
-      width: 80vw; }
+      width: 250px; }
     .sucursales .accordion-button:not(.collapsed) {
       color: black;
       background-color: #FFFFFD;
