@@ -767,6 +767,7 @@ footer {
       footer div a h3:hover {
         color: #1fb6f4; }
     footer div ul li {
+      list-style-type: none;
       color: black; }
       footer div ul li:hover,
       footer div ul li a:hover {
@@ -964,7 +965,7 @@ label {
   gap: 10px; }
   .boton-hijo {
     justify-content: center;
-    padding: 5px;
+    padding: 12px;
     border: 1px solid #ced4da;
     border-radius: 5px; }
 
@@ -996,42 +997,18 @@ label {
       margin-top: 50px;
       margin-bottom: 1px;
       color: #f86530; }
-    header p {
-      position: absolute;
-      margin-top: 40px;
-      display: inline-block; }
-  /* nav {
-        ul {
-            position: absolute;
-            list-style-type: none;
-            width: 100%;
-            text-align: center;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            flex-wrap: wrap;
-            li {
-                a {
-                    color: #000000;
-                    text-decoration: none;
-                    border-radius: 10px;
-                    padding: 0px 55px;
-                    width: 100%;
-                    border: solid 0.4rem $secundario;
-                    background-color: $secundario;
-                    margin-left: 5px;
-                    margin-right: 5px;
-                    transition: transform 3s;
-                }
-                padding: 9px;
-            }
-        }
-        a {
-            &:hover+div {
-                display: none;
-            }
-        }
-    } */
+  .hamburger-menu {
+    top: 14px;
+    position: absolute;
+    left: 1px; }
+  .hamburger-menu-2, .hamburger-menu-1 {
+    display: initial;
+    width: 42px;
+    height: 42px; }
+  .hamburger-menu-1 {
+    display: none; }
+  .social {
+    display: none; }
   .logo-img {
     padding-top: 10px; }
   .empresas {
@@ -1057,7 +1034,7 @@ label {
     height: 90px;
     padding: 10px; }
   main {
-    padding-top: 180px; }
+    padding-top: 130px; }
   header {
     position: absolute;
     width: 100%;
@@ -1068,14 +1045,16 @@ label {
     top: 74px;
     position: absolute;
     left: 1px; }
-  .hamburger-menu-1 {
+  .hamburger-menu-2, .hamburger-menu-1 {
     display: initial;
     width: 42px;
     height: 42px; }
-  .hamburger-menu-2, .hamburger-menu-1 {
+  .hamburger-menu-1 {
     display: none; }
   .animacion:hover {
     background-color: #FFFFFD; }
+  .localidades {
+    align-items: flex-start; }
   .social {
     margin-right: 10px;
     justify-content: space-evenly;
@@ -1123,8 +1102,51 @@ label {
     gap: 20px 15px;
     grid-template-areas: "header header" "h2 h2" "nos nos" "ser ser" "mis mis" "suc suc" "pie pie"; }
   .preguntas {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5px; } }
+    padding: 8px; }
+  .sucursales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 2s;
+    gap: 8px; }
+    .sucursales .accordion-body {
+      display: flex;
+      flex-direction: column;
+      padding: 0rem 1.25rem; }
+    .sucursales .accordion-button {
+      width: 260px; }
+    .sucursales .accordion-button:not(.collapsed) {
+      color: black;
+      background-color: #FFFFFD;
+      box-shadow: none;
+      padding: 5px; }
+    .sucursales .accordion-body:active {
+      width: 1000px; }
+    .sucursales .accordion-item {
+      border: 2px solid #ffcd80; }
+    .sucursales .accordion-button:focus {
+      z-index: 3;
+      outline: 0;
+      box-shadow: 0 0 0 0;
+      border: 0px solid white; }
+    .sucursales .accordion-button:not(.collapsed) {
+      color: #f86530;
+      font-size: 220%; }
+    .sucursales .accordion-button:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD7F52'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      transform: rotate(-180deg); }
+    .sucursales div iframe {
+      margin: 20px 0px;
+      width: 250px;
+      height: 260px;
+      align-self: center; }
+  .accordionContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; } }
