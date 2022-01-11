@@ -287,13 +287,6 @@ nav {
     display: block;
 }
 
-.boton-hijo {
-    &:hover {
-        background-color: $terciario;
-        color: #F3F3F3;
-    }
-}
-
 .flexMenu {
     li {
         a {
@@ -309,10 +302,6 @@ nav {
 
 .naranja {
     color: $primario;
-}
-
-.letraGrande {
-    font-size: 130%;
 }
 
 
@@ -764,15 +753,6 @@ $color in $redes {
     grid-template-areas: "header header header" "h2 h2 h2" "redes form form" "redes form form" "redes form form" "redes form form" "pie pie pie";
 }
 
-input[type=submit] {
-    color: black;
-    -webkit-text-fill-color: black;
-    &:hover {
-        color: white;
-        -webkit-text-fill-color: white;
-    }
-}
-
 #nosotros {
     @extend.form_ext;
     grid-area: nos;
@@ -876,9 +856,16 @@ label {
     gap: 10px;
     &-hijo {
         justify-content: center;
-        padding: 12px;
-        border: 1px solid #ced4da;
-        border-radius: 5px;
+        padding: 5px;
+        border: 2px solid rgb(174, 184, 194);
+        border-radius: 10px;
+        color: #606060;
+        -webkit-text-fill-color: #606060;
+        &:hover {
+            color: white;
+            -webkit-text-fill-color: white;
+            background-color: $terciario;
+        }
     }
 }
 

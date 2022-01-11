@@ -515,10 +515,6 @@ nav a:hover + div {
 .peso:hover + div {
   display: block; }
 
-.boton-hijo:hover {
-  background-color: #1fb6f4;
-  color: #F3F3F3; }
-
 .flexMenu li a:hover {
   background-color: #f86530;
   color: #F3F3F3;
@@ -527,9 +523,6 @@ nav a:hover + div {
 
 .naranja {
   color: #f86530; }
-
-.letraGrande {
-  font-size: 130%; }
 
 /* Logo whatsapp */
 .cajas {
@@ -889,13 +882,6 @@ select {
   gap: 20px 15px;
   grid-template-areas: "header header header" "h2 h2 h2" "redes form form" "redes form form" "redes form form" "redes form form" "pie pie pie"; }
 
-input[type=submit] {
-  color: black;
-  -webkit-text-fill-color: black; }
-  input[type=submit]:hover {
-    color: white;
-    -webkit-text-fill-color: white; }
-
 #nosotros {
   grid-area: nos; }
 
@@ -975,9 +961,15 @@ label {
   gap: 10px; }
   .boton-hijo {
     justify-content: center;
-    padding: 12px;
-    border: 1px solid #ced4da;
-    border-radius: 5px; }
+    padding: 5px;
+    border: 2px solid #aeb8c2;
+    border-radius: 10px;
+    color: #606060;
+    -webkit-text-fill-color: #606060; }
+    .boton-hijo:hover {
+      color: white;
+      -webkit-text-fill-color: white;
+      background-color: #1fb6f4; }
 
 .img_inf {
   padding: 2px; }
