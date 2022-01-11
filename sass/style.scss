@@ -125,23 +125,23 @@ header {
     position: fixed;
     margin: 17px;
     &:hover {
-        .hamburger-menu-1 {
+        .hamburger-menu-2 {
             display: none;
         }
-        .hamburger-menu-2 {
+        .hamburger-menu-1 {
             display: initial;
         }
     }
 }
 
-.hamburger-menu-1 {
+.hamburger-menu-2 {
     display: initial;
     width: 45px;
     height: 45px;
 }
 
-.hamburger-menu-2 {
-    @extend.hamburger-menu-1;
+.hamburger-menu-1 {
+    @extend.hamburger-menu-2;
     display: none;
 }
 
@@ -155,11 +155,11 @@ header {
             color: #000000;
             font-size: 1.5rem;
             &:hover {
-                color: $terciario;
-                .emoji-1 {
+                color: $primario;
+                .emoji-dos {
                     display: none;
                 }
-                .emoji-dos {
+                .emoji-1 {
                     display: initial;
                 }
             }
@@ -167,11 +167,11 @@ header {
     }
 }
 
-.emoji-1 {
+.emoji-dos {
     display: initial;
 }
 
-.emoji-dos {
+.emoji-1 {
     display: none;
 }
 
@@ -200,6 +200,14 @@ header {
 
 .offcanvas-title {
     padding-left: 8px;
+    color: $terciario;
+    &:hover {
+        color: $primario;
+    }
+}
+
+ul {
+    padding-left: 0rem;
 }
 
 .btn-close {
@@ -463,15 +471,16 @@ nav {
 /* Tres opciones */
 
 .page-section {
+    padding: 3rem 0;
+    display: block;
     .serviceContainer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
         width: 100%;
         margin-bottom: 10px;
         row-gap: 70px;
-        column-gap: 30px;
+        column-gap: 60px;
         a {
             border-radius: 48px;
             &:hover {
@@ -520,11 +529,6 @@ nav {
             }
         }
     }
-}
-
-.page-section {
-    padding: 3rem 0;
-    display: block;
 }
 
 
@@ -602,14 +606,29 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 15px 35px 15px 15px;
+    padding: 2px;
     border: 2px solid $primario;
-    border-radius: 55px;
+    border-radius: 45px;
     grid-area: pie;
     div {
         margin: 5px 1rem 5px 1rem;
         padding: 15px;
         display: inline-block;
+        width: 250px;
+        a {
+            color: black;
+            &:hover,
+            h3:hover {
+                color: $terciario;
+            }
+        }
+        ul li {
+            color: black;
+            &:hover,
+            a:hover {
+                color: $terciario;
+            }
+        }
     }
 }
 
@@ -694,7 +713,7 @@ $color in $redes {
 }
 
 .form_ext {
-    padding: 5px;
+    padding: 15px;
     text-align: center;
     margin: 0 30px;
 }
@@ -753,7 +772,6 @@ $color in $redes {
 #servicios {
     @extend.form_ext;
     grid-area: ser;
-    padding-top: 200px
 }
 
 #sucursales {
@@ -989,6 +1007,11 @@ label {
     .hamburger-menu-2 {
         display: none;
     }
+    .animacion {
+        &:hover {
+            background-color: $fondo;
+        }
+    }
     .social {
         margin-right: 10px;
         justify-content: space-evenly;
@@ -1004,7 +1027,7 @@ label {
         display: none;
     }
     .page-section {
-        display: block;
+        padding-top: 1rem;
     }
     .serviceContainer {
         gap: 100px;
