@@ -370,9 +370,6 @@ h2 {
 h3 {
   font-weight: bold; }
 
-ul li {
-  list-style-type: none; }
-
 /* Encabezado */
 .logo {
   text-align: center; }
@@ -857,6 +854,8 @@ select {
 /* Extend */
 .form__info {
   grid-area: masInfo; }
+  .form__info ul li {
+    list-style-type: none; }
 
 .form__newsLetters {
   grid-area: mail; }
@@ -1118,7 +1117,8 @@ label {
     flex-wrap: wrap;
     align-items: center;
     transition: all 2s;
-    gap: 8px; }
+    gap: 8px;
+    justify-content: center; }
     .sucursales .accordion-body {
       display: flex;
       flex-direction: column;
