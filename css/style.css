@@ -319,10 +319,13 @@ body {
 
 main {
   padding-top: 8rem;
-  padding-left: 2px; }
+  padding-left: 2px;
+  position: relative;
+  max-width: 1360px;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .mainCot {
-  max-width: 1360px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -846,10 +849,14 @@ select {
     list-style-type: none;
     padding-left: 0rem; }
 
-.form_ext, .form__info, .form__newsLetters, .form__crecer, #submit, .form, #nosotros, #mision, #servicios, #sucursales {
+.form_ext, .form__info, .form__newsLetters, .form__crecer, #submit, .form, #nosotros, #servicios, #mision, #imgNosUno, #imgNosDos, #imgNosTres {
   padding: 15px;
   text-align: center;
-  margin: 0 30px; }
+  margin: 0 30px;
+  border-radius: 50px;
+  width: 600px;
+  height: auto;
+  position: relative; }
 
 /* Extend */
 .form__info {
@@ -872,7 +879,8 @@ select {
   justify-content: space-evenly;
   border: 2px solid #ffcd80;
   border-radius: 8px;
-  grid-area: form; }
+  grid-area: form;
+  width: auto; }
 
 .containerAyuda {
   display: grid;
@@ -882,36 +890,76 @@ select {
   grid-template-areas: "header header header" "h2 h2 h2" "redes form form" "redes form form" "redes form form" "redes form form" "pie pie pie"; }
 
 #nosotros {
-  grid-area: nos; }
-
-#mision {
-  grid-area: mis; }
+  grid-area: nos;
+  background-color: rgba(255, 255, 255, 0.692);
+  right: 13vw;
+  top: 25px;
+  transition: all 2s; }
+  #nosotros:hover {
+    background-color: #ffcd80;
+    transform: scale(1.05, 1.05); }
 
 #servicios {
-  grid-area: ser; }
+  grid-area: ser;
+  background-color: rgba(255, 255, 255, 0.692);
+  right: -8vw;
+  width: 410px;
+  transition: all 2s;
+  top: 60px; }
+  #servicios:hover {
+    background-color: #ffcd80;
+    transform: scale(1.05, 1.05); }
 
-#sucursales {
-  grid-area: suc; }
+#mision {
+  grid-area: mis;
+  top: 80px;
+  right: 12vw;
+  background-color: rgba(255, 255, 255, 0.692);
+  transition: all 2s; }
+  #mision:hover {
+    background-color: #ffcd80;
+    transform: scale(1.05, 1.05); }
+
+#imgNosUno {
+  top: -258px; }
+  #imgNosUno img {
+    height: 300px; }
+
+#imgNosDos {
+  top: -340px;
+  right: 30%; }
+
+#imgNosTres {
+  top: -348px;
+  margin-bottom: 100px; }
+  #imgNosTres img {
+    height: 300px; }
 
 .containerNosotros {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.4fr 1fr 1fr 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px 15px;
-  grid-template-areas: "header header" "h2 h2" "nos ser" "nos ser" "mis mis" "suc suc" "pie pie"; }
+  align-items: center; }
+  .containerNosotros img {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    padding: 0px;
+    border-radius: 50px;
+    border: 2px solid #ffcd80; }
   .containerNosotros .area {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border: 2px solid #ffcd80;
     border-radius: 8px; }
+  .containerNosotros ul li {
+    list-style-type: none; }
 
 /* Cotización nueva */
 .descripcion {
   padding: 0 1.5rem; }
-
-.containerNosotros ul li {
-  list-style-type: none; }
 
 .selfAlign {
   align-self: center; }
@@ -1098,10 +1146,11 @@ label {
     gap: 20px 15px;
     grid-template-areas: "header header header" "h2 h2 h2" "redes redes redes" "redes redes redes" "form form form" "form form form" "pie pie pie"; }
   .containerNosotros {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2.25fr 0.4fr 1.2fr 2fr 2.5fr;
-    gap: 20px 15px;
-    grid-template-areas: "header header" "h2 h2" "nos nos" "ser ser" "mis mis" "suc suc" "pie pie"; }
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    .containerNosotros #titulo {
+      margin-top: 110px; }
   .preguntas {
     width: 90%;
     display: flex;
