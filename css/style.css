@@ -390,10 +390,8 @@ header {
   z-index: 10;
   border-bottom: solid 3px #f86530;
   border-radius: 3px;
-  grid-area: header; }
-
-.header-index {
-  margin-top: 16px; }
+  grid-area: header;
+  top: 0px; }
 
 /* Hamburger menu */
 .hamburger-menu {
@@ -534,13 +532,29 @@ nav a:hover + div {
   z-index: 11;
   padding: 2px; }
 
-.whatsapp {
+.whatsapp1 {
+  display: inherit;
   width: 100px;
   height: 55px;
   position: fixed;
   bottom: 15px;
   right: -4px;
   z-index: 10; }
+
+.whatsapp2 {
+  display: none;
+  width: 100px;
+  height: 55px;
+  position: fixed;
+  bottom: 15px;
+  right: -4px;
+  z-index: 10; }
+
+.wa1 {
+  display: initial; }
+
+.wa2 {
+  display: none; }
 
 .social {
   margin-right: 20px;
@@ -860,15 +874,18 @@ select {
 
 /* Extend */
 .form__info {
-  grid-area: masInfo; }
+  grid-area: masInfo;
+  width: auto; }
   .form__info ul li {
     list-style-type: none; }
 
 .form__newsLetters {
-  grid-area: mail; }
+  grid-area: mail;
+  width: auto; }
 
 .form__crecer {
-  grid-area: crecer; }
+  grid-area: crecer;
+  width: auto; }
 
 #submit {
   grid-area: sub; }
@@ -1084,6 +1101,12 @@ label {
     padding: 10px; }
   main {
     padding-top: 130px; }
+  .wa1,
+  .whatsapp1 {
+    display: none; }
+  .wa2,
+  .whatsapp2 {
+    display: inherit; }
   header {
     position: absolute;
     width: 100%;
@@ -1149,8 +1172,30 @@ label {
     display: flex;
     flex-direction: column;
     gap: 20px; }
-    .containerNosotros #titulo {
-      margin-top: 110px; }
+    .containerNosotros .form_ext, .containerNosotros .form__info, .containerNosotros .form__newsLetters, .containerNosotros .form__crecer, .containerNosotros #submit, .containerNosotros .form, .containerNosotros #nosotros, .containerNosotros #servicios, .containerNosotros #mision, .containerNosotros #imgNosUno, .containerNosotros #imgNosDos, .containerNosotros #imgNosTres {
+      padding: 10px;
+      text-align: center;
+      margin: 10px;
+      border-radius: 50px;
+      width: auto;
+      height: auto;
+      right: auto;
+      left: auto;
+      position: static; }
+    .containerNosotros .area {
+      z-index: 11; }
+    .containerNosotros #nosotros {
+      padding: 15px;
+      text-align: center;
+      margin: 10px; }
+    .containerNosotros div img {
+      width: 90%;
+      height: 150px;
+      position: static;
+      z-index: -11;
+      padding: 0px;
+      border-radius: 50px;
+      border: 2px solid #ffcd80; }
   .preguntas {
     width: 90%;
     display: flex;
