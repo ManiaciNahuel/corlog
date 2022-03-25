@@ -21,6 +21,10 @@ body {
     }
 }
 
+#AAA {
+    list-style-type: none;
+}
+
 * {
     font-family: 'Raleway';
     margin: 0rem;
@@ -29,10 +33,9 @@ body {
 }
 
 main {
-    padding-top: 8rem;
-    padding-left: 2px;
+    padding: 8rem 1rem;
     position: relative;
-    max-width: 1360px;
+    max-width: 1260px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -525,8 +528,12 @@ nav {
                         color: #d34410;
                         font: bold;
                     }
+                    img {
+                        border-radius: 100px;
+                    }
                 }
                 img {
+                    transition: all 2s;
                     border-radius: 150px;
                     position: relative;
                     width: 100%;

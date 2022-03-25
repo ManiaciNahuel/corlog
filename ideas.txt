@@ -1,0 +1,102 @@
+header h1 {
+    display: inline;
+    position: relative;
+    bottom: 70px;
+}
+
+#logo {
+    padding-bottom: 10px;
+}
+
+           /* * {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 30px;
+    background-color: rgb(160, 218, 160);
+}
+
+header {
+    border: 5px solid salmon;
+    grid-area: header;
+}
+
+h2 {
+    border: 5px solid salmon;
+    grid-area: h2;
+}
+
+#masinfo {
+    border: 5px solid salmon;
+    grid-area: masinfo;
+}
+
+#redes {
+    border: 5px solid salmon;
+    grid-area: redes;
+}
+
+#mail {
+    border: 5px solid salmon;
+    grid-area: mail;
+}
+
+#crecer {
+    border: 5px solid salmon;
+    grid-area: crecer;
+}
+
+footer {
+    border: 5px solid salmon;
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 1fr 0.5fr 0.75fr 0.7fr;
+    gap: 20px 15px;
+    grid-template-areas: "header header header"/* Fila nro 1 
+"h2 h2 h2"
+/* Fila nro 2 
+"masinfo redes redes"
+/* Fila nro 3 
+
+"masinfo mail mail"
+/* Fila nro 4 
+
+"masinfo crecer crecer"
+/* Fila nro 5
+
+"footer footer footer"
+/* Fila nro 6 
+
+;}*/
+
+
+************************
+.animation {
+    animation-duration: 10s;
+    animation: aparecer;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 100;
+    }
+    60% {
+        opacity: 20;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 70;
+    }
+}
+************************************** 
