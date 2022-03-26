@@ -1,6 +1,7 @@
 node_modules/
-presupuesto/
-ideas/
+
+.idea/
+.ideas/
 Wireframe/
 
 
