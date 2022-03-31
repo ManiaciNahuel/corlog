@@ -674,7 +674,7 @@ select {
 #titulo {
     text-align: center;
     justify-self: stretch;
-    grid-area: h2;
+    margin-top: 160px;
 }
 
 
@@ -716,15 +716,24 @@ $color in $redes {
 
 .redes {
     margin: 0 30px;
-    line-height: 5.5;
+    line-height: 2.5;
     padding: 35px 5px;
     text-align: center;
     border: 2px solid $secundario;
     border-radius: 8px;
-    grid-area: redes;
-    ul {
+}
+
+.ul-horizontal {
+    list-style-type: none;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.preg_y_resp {
+    ul li {
         list-style-type: none;
-        padding-left: 0rem;
     }
 }
 
@@ -779,11 +788,8 @@ $color in $redes {
 }
 
 .containerAyuda {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    grid-template-rows: 0.85fr 0.4fr 0.5fr repeat(3, 0.75fr) auto;
-    gap: 20px 15px;
-    grid-template-areas: "header header header" "h2 h2 h2" "redes form form" "redes form form" "redes form form" "redes form form" "pie pie pie";
+    display: flex;
+    flex-direction: column;
 }
 
 #nosotros {

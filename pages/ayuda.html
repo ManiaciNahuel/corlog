@@ -132,8 +132,8 @@
     <h2 id="titulo">INFORMACIÓN DE CONTACTO Y AYUDA</h2>
 
     <div class="redes">
-        <h3 class="">REDES y CONTACTO</h3>
-        <ul>
+        <h3>REDES y CONTACTO</h3>
+        <ul class="ul-horizontal">
             <li class="red--instagram">
                 <a href="https://www.instagram.com/corlogargentina/"> Instagram
                 </a>
@@ -145,14 +145,6 @@
             <li class="red--mail"><a href="mailto:nahuelmaniaci@gmail.com" target="_blank">Correo electrónico</a>
             </li>
         </ul>
-    </div>
-    <!-- Form ubicado a la derecha -->
-    <form action="https://formsubmit.co/af91871a87f9f0d40fd68429f3ba593c" method="post" class="form form_ext">
-        <input type="hidden" name="_next" value="https://maniacinahuel.github.io/proyecto-corlog/index.html">
-        <!-- Honeypot -->
-        <input type="text" name="_honey" style="display: none;">
-        <!-- Disable Captcha -->
-        <input type="hidden" name="_captcha" value="false">
         <div class="form__info">
             <h3> Teléfonos de cada sucursal</h3>
             <ul>
@@ -163,28 +155,79 @@
             <p>Si necesita más información sobre nuestras sucursales haciendo <a href="destinos.html#hrefNuestrasSuc">click acá</a> encontrará lo que busca.</p>
 
         </div>
-        <div class="form__newsLetters">
-            <h3 class="inline ">Si queres recibir mails con novedades y noticias sobre la empresa ingresa tu correo:</h3>
-            <br>
-            <br><input type="email" name="Correo&nbsp;electrónico" placeholder="tumail@mail.com">
-        </div>
-        <div class="form__crecer">
-            <h3 class="">Ayudanos a crecer...¿Cómo nos conociste?</h3>
+    </div>
+    <!-- Form ubicado a la derecha -->
+    <form action="https://formsubmit.co/af91871a87f9f0d40fd68429f3ba593c" method="post" class="form form_ext">
+        <input type="hidden" name="_next" value="https://maniacinahuel.github.io/proyecto-corlog/index.html">
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display: none;">
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
 
-            <div name="vinculo" class="input-group mb-3">
-                <select name="Opciones" class="form-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option class="opcion-1" value="1">Vía Instagram</option>
-                <option class="opcion-2" value="2">Vía Facebook</option>
-                <option class="opcion-3" value="3">Un conocido me habló de la empresa</option>
-                <option value="opcion-4" value="4">Otro</option>
-            </select>
-            </div>
-
-        </div>
-        <div class="boton">
-            <input class="boton-hijo hoverBoton" type="submit" value="Enviar formulario" />
-            <input class="boton-hijo hoverBoton" type="reset" value="Limpiar formulario" />
+        <div class="preg_y_resp">
+            <h3>¿Cuánto cuesta un envío?</h3>
+            <p>
+                En función a las variables que presenta cada envió (destino, cantidad de bultos, peso, medidas, etc.), lo invitamos a que nos consulte en la sección <a href="cotizacion.html">cotización </a> y le brindaremos la información correspondiente.
+            </p>
+            <h3>¿Qué servicios ofrecen?</h3>
+            <p>
+                Encomiendas (Bultos varios – Paquetes) - Cargas general en pallet y/o m3 - Servicios a empresas - Cargas Peligrosas – Contra reembolso - Servicios punto a punto - Retiros y entregas en domicilios - Distribución estándar y especiales – Mudanzas – E-commerce
+                – Gestiones – Centro de envió y recepción para Mercado libre
+            </p>
+            <h3>¿A qué localidades llegan?</h3>
+            <p>
+                Nuestros destinos son Córdoba, Buenos Aires, Rosario, Rio IV, San Francisco. Al ser un centro logístico contamos con empresas partner que nos permiten llegar a todo el territorio Nacional.
+            </p>
+            <h3>¿Realizan embalajes?</h3>
+            <p>
+                No. El embalaje es a cargo del cliente.
+            </p>
+            <h3>¿Qué datos tiene que tener la encomienda para realizar el envío?</h3>
+            <p>Todo tipo de envío que realice debe tener los datos que a continuación te informamos, es importante que no falte ninguno, así podemos realizar el servicio en forma correcta. Los campos que solicitamos son de carácter OBLIGATORIO y corresponden
+                al remitente y al destinatario. </p>
+            <ul>
+                <li>NOMBRE o APELLIDO</li>
+                <li>DNI o CUIT</li>
+                <li>TELEFONO </li>
+                <li>DIRECCIÓN (Sólo si es a domicilio)</li>
+                <li>LOCALIDAD</li>
+                <li>PROVINCIA</li>
+            </ul>
+            <h3>¿Mi encomienda tiene seguro?</h3>
+            <p>Sí. Por ley su encomienda tiene un seguro, el valor declarado mínimo es de $ 1.000 por bulto, pero puede asegurarlo por el monto del valor del contenido o por el monto que dispongas. La suma máxima la establecemos al momento del envió. El
+                porcentaje de seguro a aplicar en nuestra empresa, CORLOS ARGENTINA es del 3%. El seguro cubre robo o hurto del continente (caja o bulto), no cubre faltantes de contenido ni roturas por negligencia en el embalaje. Cabe destacar que si
+                desea declarar más del mínimo es necesario que el envío viaje con un remito adjuntado.</p>
+            <h3>¿Qué debe que presentar el destinatario para poder retirar o recibir el envío?</h3>
+            <p>Debe presentar DNI si es persona física o autorización con membrete si es empresa.</p>
+            <h3>¿Puede retirar un tercero?</h3>
+            <p>Sí, debe llevar una autorización firmada con los datos del destinatario y de la persona autorizada a retirar, además debe adjuntar una fotocopia del DNI del destinatario.</p>
+            <h3>¿Cómo embalo mi encomienda correctamente?</h3>
+            <p>Su encomienda es muy importante para nosotros y necesitamos que este muy bien embalada. No envíe elementos sueltos dentro de la caja, utilice cajas resistentes, si usa cajas recicladas, controle que no tenga rupturas o rajaduras, no envíe
+                líquidos. Aclare con carteles si el contenido es frágil, utilice una buena cinta para cerrarla, cierre para minimizar el riesgo de que se abra la caja en el viaje. Evite enviar bolsas con contenido, si no tiene otra opción, envuélvala
+                con muchas bolsas y cinta o film. Existen elementos para embalajes, como el cartón corrugado, trozos de telgopor, pluripol, strich, bolsas con aire, entre otros. Utilícelos, son muy eficaces al momento de embalar tu encomienda y no correr
+                riesgo de que se rompa.
+            </p>
+            <h3>¿Puedo pedir una recolección/retiro en mi domicilio?</h3>
+            <p>Sí. Preferentemente solicitamos que lo pida un día antes, caso contrario, realizarlo antes de las 10.30 hs y arbitramos los medios para retirarlo el mismo día, dependiendo de la zona. </p>
+            <h3>¿Cómo puedo pagar?</h3>
+            <p>Le brindamos todos los medios de pagos: efectivo, transferencia bancaria, tarjetas de débito y crédito, mercado pago, cheques físicos (previo scoring) e e-cheque.
+            </p>
+            <h3>Si no estoy presente en mi domicilio, ¿puede recibir otra persona?</h3>
+            <p>Sí. La condición es que sea mayor de 18 años y solo entregamos en el domicilio indicado en la encomienda.
+            </p>
+            <h3>¿Si no hay nadie en mi domicilio como recupero mi encomienda?</h3>
+            <p>Te dejaremos un aviso de visita, se contacta con nosotros y coordinamos la entrega.</p>
+            <h3>¿Cuánto tiempo guardan mi encomienda?</h3>
+            <p>Si por algún motivo no pudimos entregarle su encomienda, la misma queda en guarda por 30 días, pasado ese tiempo y agotado toda instancia de entrega, se decomisa y queda en donación o destrucción ante una autoridad pública.</p>
+            <h3>¿Puedo realizar algún cambio posterior al despacho del envío?</h3>
+            <p>Sí, puede hacer todos los cambios que quiera, siempre y cuando la misma aún esté en previo proceso de reparto.</p>
+            <h3>¿Cuáles son los elementos prohibidos para transportar?</h3>
+            <p>Sustancias inflamables, corrosivos, explosivos, contaminantes y precursores químicos. Armas, pólvora, municiones y afines. Drogas, estupefacientes, medicamentos psicotrópicos y psicofármacos en general. Obras de arte y joyas. Elementos líquidos,
+                frágiles y/o explosivos. Sustancias de carácter infeccioso y/o peligroso. Plantas y animales vivos. Dinero en efectivo, cheques u otros valores, tarjetas de crédito, débito o compra, billetes de lotería y/o cualquier otro tipo de comprobante
+                de juego de azar. Alimentos perecederos. Materiales magnéticos, radioactivos y biológicos. Presentaciones en licitaciones y/o concursos de precios. Cualquier otra sustancia y/o material que no es permitida por la normativa postal o cuyo
+                uso o tenencia esté penado legalmente o que se hubiera obtenido en violación a normas del Código Aduanero y/o de cualquier otra normativa vigente, como también publicaciones de carácter presuntamente inmoral o delictuoso, cuya circulación
+                esté prohibida en la República Argentina. NOTA: Una de nuestras unidades de negocio es CARGA PELIGROSA, en este caso son servicios especiales y a medida del cliente. Consúltenos.
+            </p>
         </div>
     </form>
     <br>
