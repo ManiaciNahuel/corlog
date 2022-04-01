@@ -583,13 +583,19 @@ nav a:hover + div {
 
 /* Destinos */
 .localidades {
+  width: 300px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding-left: 0;
-  margin-bottom: 0;
-  align-items: center;
+  margin: 0;
+  margin-block-end: 0;
+  position: relative;
+  left: 40%;
   list-style-type: "\1F4CC";
-  list-style-position: inside; }
+  list-style-position: inherit; }
+  .localidades li {
+    width: 300px; }
 
 .destinos {
   margin: 20px;
@@ -1056,7 +1062,7 @@ label {
 .opcion-3 {
   color: #1ca81c; }
 
-/*  Small devices (landscape phones, 576px and up) */
+/*  Small devices (landscape phones, tablets, 576px and up) */
 @media (min-width: 601px) and (max-width: 870px) {
   header {
     position: absolute;
@@ -1071,6 +1077,8 @@ label {
       margin-top: 50px;
       margin-bottom: 1px;
       color: #f86530; }
+  .localidades {
+    left: 30%; }
   .hamburger-menu {
     top: 14px;
     position: absolute;
@@ -1134,7 +1142,11 @@ label {
   .animacion:hover {
     background-color: #FFFFFD; }
   .localidades {
-    align-items: flex-start; }
+    align-items: flex-start;
+    width: 240px;
+    left: 10%; }
+    .localidades li {
+      width: 200px; }
   .social {
     margin-right: 10px;
     justify-content: space-evenly;
