@@ -877,8 +877,17 @@ select {
   flex-direction: row;
   padding: 10px; }
 
-.preg_y_resp ul li {
-  list-style-type: none; }
+.preg_y_resp {
+  padding: 15px;
+  margin: 10PX 30px;
+  border-radius: 50px;
+  text-align: start; }
+  .preg_y_resp ul {
+    list-style-type: circle;
+    list-style-position: inherit;
+    padding-left: 30px; }
+  .preg_y_resp p {
+    text-indent: 30px; }
 
 .form_ext, .form__info, .form__newsLetters, .form__crecer, #submit, .form, #nosotros, #servicios, #mision, #imgNosUno, #imgNosDos, #imgNosTres {
   padding: 15px;
