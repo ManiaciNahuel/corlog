@@ -9,7 +9,7 @@ $fondo: #FFFFFD;
 /* General */
 
 body {
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: $fondo;
     height: 100%;
     section {
@@ -362,6 +362,7 @@ nav {
 /* Hovers */
 
 .hoverDestinos {
+    font-size: 1rem;
     border-radius: 6px;
     background-color: #f0562fce;
     padding: 3px;
@@ -389,6 +390,7 @@ nav {
 .flexMenu {
     li {
         a {
+            font-size: 1rem;
             &:hover {
                 background-color: $primario;
                 color: #F3F3F3;
@@ -474,6 +476,16 @@ nav {
 }
 
 
+/* Seguimiento */
+
+.imgSeguimiento {
+    width: 500px;
+    height: 500px;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
 /* Destinos */
 
 .localidades {
@@ -529,7 +541,7 @@ nav {
     }
     .accordion-button:not(.collapsed) {
         color: $primario;
-        font-size: 220%;
+        font-size: 1.8rem;
     }
     .accordion-button:not(.collapsed)::after {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD7F52'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -658,10 +670,12 @@ nav {
 
 .carousel-control-prev {
     padding: 3px;
+    justify-content: start;
 }
 
 .carousel-control-next {
     padding: 3px;
+    justify-content: end;
 }
 
 .carousel-inner {
@@ -721,6 +735,7 @@ nav {
 /* Footer */
 
 footer {
+    font-size: 1rem;
     margin: 30px 15px 35px 15px;
     justify-content: space-evenly;
     display: flex;

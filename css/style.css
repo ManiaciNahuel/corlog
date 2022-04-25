@@ -54,10 +54,10 @@
   display: block; }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff0000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e"); }
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e"); }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff0000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
 
 .carousel-indicators {
   position: absolute;
@@ -299,7 +299,7 @@
 
 /* General */
 body {
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: #FFFFFD;
   height: 100%; }
   body section ul li {
@@ -570,6 +570,7 @@ nav a:hover + div {
 
 /* Hovers */
 .hoverDestinos, .hoverSeguimiento, .hoverPeso {
+  font-size: 1rem;
   border-radius: 6px;
   background-color: #f0562fce;
   padding: 3px;
@@ -588,11 +589,13 @@ nav a:hover + div {
 .peso:hover + div {
   display: block; }
 
-.flexMenu li a:hover {
-  background-color: #f86530;
-  color: #F3F3F3;
-  border: solid #f86530 0.4rem;
-  transform: translate(120px, 50%); }
+.flexMenu li a {
+  font-size: 1rem; }
+  .flexMenu li a:hover {
+    background-color: #f86530;
+    color: #F3F3F3;
+    border: solid #f86530 0.4rem;
+    transform: translate(120px, 50%); }
 
 .naranja {
   color: #f86530; }
@@ -654,6 +657,13 @@ nav a:hover + div {
     border: none;
     border-radius: 11px; }
 
+/* Seguimiento */
+.imgSeguimiento {
+  width: 500px;
+  height: 500px;
+  max-width: 90%;
+  max-height: 90%; }
+
 /* Destinos */
 .localidades {
   width: 300px;
@@ -700,7 +710,7 @@ nav a:hover + div {
     border: 0px solid white; }
   .sucursales .accordion-button:not(.collapsed) {
     color: #f86530;
-    font-size: 220%; }
+    font-size: 1.8rem; }
   .sucursales .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD7F52'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     transform: rotate(-180deg); }
@@ -798,10 +808,12 @@ nav a:hover + div {
 
 /* Carousel */
 .carousel-control-prev {
-  padding: 3px; }
+  padding: 3px;
+  justify-content: start; }
 
 .carousel-control-next {
-  padding: 3px; }
+  padding: 3px;
+  justify-content: end; }
 
 .carousel-inner img {
   width: 100%;
@@ -839,6 +851,7 @@ nav a:hover + div {
 
 /* Footer */
 footer {
+  font-size: 1rem;
   margin: 30px 15px 35px 15px;
   justify-content: space-evenly;
   display: flex;
