@@ -659,10 +659,9 @@ nav a:hover + div {
 
 /* Seguimiento */
 .imgSeguimiento {
-  width: 500px;
-  height: 500px;
-  max-width: 90%;
-  max-height: 90%; }
+  max-width: 60%;
+  max-height: 65%;
+  aspect-ratio: 2526/2182; }
 
 /* Destinos */
 .localidades {
@@ -807,6 +806,9 @@ nav a:hover + div {
           justify-content: end; }
 
 /* Carousel */
+.carousel {
+  margin-top: 60px; }
+
 .carousel-control-prev {
   padding: 3px;
   justify-content: start; }
@@ -817,7 +819,8 @@ nav a:hover + div {
 
 .carousel-inner img {
   width: 100%;
-  max-height: 500px; }
+  max-height: 500px;
+  border-radius: 50px; }
 
 /* Empresas */
 .empresas {
@@ -1203,7 +1206,10 @@ label {
     flex-direction: row;
     flex-wrap: wrap; }
     .preguntas div {
-      width: 100%; } }
+      width: 100%; }
+  .imgSeguimiento {
+    max-width: 70%;
+    max-height: 75%; } }
 
 /* Celulares */
 @media (max-width: 600px) {
@@ -1275,6 +1281,9 @@ label {
     width: 100%; }
   .textoCotizacion {
     display: inline-block; }
+  .imgSeguimiento {
+    max-width: 90%;
+    max-height: 95%; }
   table {
     display: none; }
   .textArea {

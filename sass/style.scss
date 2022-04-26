@@ -479,10 +479,9 @@ nav {
 /* Seguimiento */
 
 .imgSeguimiento {
-    width: 500px;
-    height: 500px;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 60%;
+    max-height: 65%;
+    aspect-ratio: 2526/2182;
 }
 
 
@@ -668,6 +667,10 @@ nav {
 
 /* Carousel */
 
+.carousel {
+    margin-top: 60px;
+}
+
 .carousel-control-prev {
     padding: 3px;
     justify-content: start;
@@ -682,6 +685,7 @@ nav {
     img {
         width: 100%;
         max-height: 500px;
+        border-radius: 50px;
     }
 }
 
@@ -1176,6 +1180,10 @@ label {
             width: 100%;
         }
     }
+    .imgSeguimiento {
+        max-width: 70%;
+        max-height: 75%;
+    }
 }
 
 
@@ -1272,6 +1280,10 @@ label {
     }
     .textoCotizacion {
         display: inline-block;
+    }
+    .imgSeguimiento {
+        max-width: 90%;
+        max-height: 95%;
     }
     table {
         display: none;
