@@ -1408,7 +1408,7 @@ label {
       transform: rotate(-180deg); }
     .sucursales div iframe {
       margin: 20px 0px;
-      width: 90vw;
+      width: 90%;
       height: 300px;
       align-self: center; }
   .accordionContainer {
