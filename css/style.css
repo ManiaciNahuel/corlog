@@ -1274,6 +1274,17 @@ label {
           display: none; }
         .page-section .serviceContainer a div h2 {
           top: -55px; }
+        .page-section .serviceContainer a div:hover {
+          border-radius: 10px;
+          background-color: #FFFFFD; }
+          .page-section .serviceContainer a div:hover h2 {
+            color: black;
+            background-color: #f86530cf; }
+          .page-section .serviceContainer a div:hover p {
+            color: black;
+            font: bold; }
+          .page-section .serviceContainer a div:hover img {
+            border-radius: 100px; }
   .carousel-inner-2 {
     display: inline; }
     .carousel-inner-2 img {

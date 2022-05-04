@@ -1256,6 +1256,21 @@ label {
                 h2 {
                     top: -55px;
                 }
+                &:hover {
+                    border-radius: 10px;
+                    background-color: $fondo;
+                    h2 {
+                        color: black;
+                        background-color: #f86530cf;
+                    }
+                    p {
+                        color: black;
+                        font: bold;
+                    }
+                    img {
+                        border-radius: 100px;
+                    }
+                }
             }
         }
     }
