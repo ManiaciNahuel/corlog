@@ -37,6 +37,18 @@
     overflow: hidden;
 }
 
+.carousel-inner-2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner-2::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
 .carousel-inner::after {
     display: block;
     clear: both;

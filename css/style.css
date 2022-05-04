@@ -30,6 +30,16 @@
   width: 100%;
   overflow: hidden; }
 
+.carousel-inner-2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.carousel-inner-2::after {
+  display: block;
+  clear: both;
+  content: ""; }
+
 .carousel-inner::after {
   display: block;
   clear: both;
@@ -822,6 +832,9 @@ nav a:hover + div {
   max-height: 500px;
   border-radius: 50px; }
 
+.carousel-inner-2 {
+  display: none; }
+
 /* Empresas */
 .empresas {
   display: flex;
@@ -1213,6 +1226,10 @@ label {
 
 /* Celulares */
 @media (max-width: 600px) {
+  :root {
+    --marquee-width: 95vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3; }
   .logo-img {
     max-width: 320px;
     height: 90px;
@@ -1243,6 +1260,28 @@ label {
     display: none; }
   .animacion:hover {
     background-color: #FFFFFD; }
+  .page-section .serviceContainer {
+    margin-top: 80px; }
+    .page-section .serviceContainer a {
+      height: 10px; }
+      .page-section .serviceContainer a div {
+        margin: 0px;
+        width: 30rem;
+        height: 120px;
+        justify-content: center;
+        text-align: center; }
+        .page-section .serviceContainer a div img {
+          display: none; }
+        .page-section .serviceContainer a div h2 {
+          top: -55px; }
+  .carousel-inner-2 {
+    display: inline; }
+    .carousel-inner-2 img {
+      width: 100%;
+      max-height: 500px;
+      border-radius: 20px; }
+  .carousel-inner {
+    display: none; }
   .localidades {
     align-items: flex-start;
     width: 240px;
@@ -1262,23 +1301,15 @@ label {
     display: none; }
   .page-section {
     padding-top: 1rem; }
-  .serviceContainer {
-    gap: 100px; }
-    .serviceContainer a {
-      width: 300px; }
-      .serviceContainer a div {
-        margin: 0px;
-        width: 100%;
-        justify-content: center;
-        text-align: center; }
-  .containerEmpresas {
+  .empresas .containerEmpresas {
     width: 100%;
-    display: grid;
     align-items: center;
-    justify-content: center;
     grid-template-columns: 150px 150px; }
-  .empresas div img {
-    width: 100%; }
+    .empresas .containerEmpresas img {
+      width: 180px; }
+  .marquee-content li img {
+    width: 80%;
+    height: 80%; }
   .textoCotizacion {
     display: inline-block; }
   .imgSeguimiento {
