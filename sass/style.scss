@@ -689,7 +689,7 @@ nav {
     }
 }
 
-.carousel-inner-2 {
+.carousel-2 {
     display: none;
 }
 
@@ -1242,6 +1242,7 @@ label {
     }
     .page-section .serviceContainer {
         margin-top: 80px;
+        height: 106px;
         a {
             height: 10px;
             div {
@@ -1274,7 +1275,7 @@ label {
             }
         }
     }
-    .carousel-inner-2 {
+    .carousel-2 {
         display: inline;
         img {
             width: 100%;
@@ -1282,7 +1283,7 @@ label {
             border-radius: 20px;
         }
     }
-    .carousel-inner {
+    .carousel-1 {
         display: none;
     }
     .localidades {
@@ -1366,7 +1367,6 @@ label {
         }
         div img {
             width: 90%;
-            height: 150px;
             position: static;
             z-index: -11;
             padding: 0px;

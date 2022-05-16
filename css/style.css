@@ -832,7 +832,7 @@ nav a:hover + div {
   max-height: 500px;
   border-radius: 50px; }
 
-.carousel-inner-2 {
+.carousel-2 {
   display: none; }
 
 /* Empresas */
@@ -1261,7 +1261,8 @@ label {
   .animacion:hover {
     background-color: #FFFFFD; }
   .page-section .serviceContainer {
-    margin-top: 80px; }
+    margin-top: 80px;
+    height: 106px; }
     .page-section .serviceContainer a {
       height: 10px; }
       .page-section .serviceContainer a div {
@@ -1285,13 +1286,13 @@ label {
             font: bold; }
           .page-section .serviceContainer a div:hover img {
             border-radius: 100px; }
-  .carousel-inner-2 {
+  .carousel-2 {
     display: inline; }
-    .carousel-inner-2 img {
+    .carousel-2 img {
       width: 100%;
       max-height: 500px;
       border-radius: 20px; }
-  .carousel-inner {
+  .carousel-1 {
     display: none; }
   .localidades {
     align-items: flex-start;
@@ -1357,7 +1358,6 @@ label {
       margin: 10px; }
     .containerNosotros div img {
       width: 90%;
-      height: 150px;
       position: static;
       z-index: -11;
       padding: 0px;
