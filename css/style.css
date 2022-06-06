@@ -669,9 +669,28 @@ nav a:hover + div {
 
 /* Seguimiento */
 .imgSeguimiento {
-  max-width: 60%;
-  max-height: 65%;
-  aspect-ratio: 2526/2182; }
+  max-width: 40%;
+  max-height: 65%; }
+
+.btn-seg {
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid #aeb8c2;
+  border-radius: 10px;
+  color: #606060;
+  -webkit-text-fill-color: #606060; }
+  .btn-seg:hover {
+    color: white;
+    -webkit-text-fill-color: white;
+    background-color: #1fb6f4; }
+  .btn-seg a {
+    text-decoration: none;
+    color: #606060; }
+    .btn-seg a:hover {
+      color: black; }
+
+.h3-seg {
+  margin-top: 2rem; }
 
 /* Destinos */
 .localidades {
