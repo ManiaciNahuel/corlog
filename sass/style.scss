@@ -533,6 +533,125 @@ nav {
     margin-top: 0;
 }
 
+
+/* .accordion:hover {
+    background-color: rgba(250, 169, 64, 0.746);
+    cursor: pointer;
+} */
+
+.sucursales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s;
+    gap: 25px;
+    .accordionContainer {
+        @extend .textAlignCenter;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .accordion_item {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        width: 80%;
+        height: 500px;
+        box-shadow: 15px 15px rgb(219, 219, 219);
+        border-radius: 10px;
+        border: 2px solid #ffcd80;
+        background-color: $fondo;
+        margin-bottom: 14px;
+    }
+    .accordion-body {
+        display: flex;
+        flex-direction: row;
+    }
+    button {
+        position: relative;
+        padding: 15px 40px;
+        width: 400px;
+        box-shadow: 5px 5px rgb(219, 219, 219);
+        border-radius: 10px;
+        border: 2px solid #ffcd80;
+        background-color: $fondo;
+        &:hover {
+            color: #000;
+            background-color: #ffcd80;
+            box-shadow: 5px 5px rgb(114, 114, 114);
+            border: 2px solid rgb(114, 114, 114);
+        }
+    }
+    button p {
+        margin: 0px;
+        font-size: 20px;
+    }
+    .accordion_item {
+        border: 2px solid #ffcd80;
+        display: none;
+    }
+}
+
+
+/* .accordion-button:not(.collapsed) {
+            color: black;
+            background-color: #FFFFFD;
+            box-shadow: none;
+        }
+        
+        .accordion-body:active {
+            width: 1000px;
+        } */
+
+
+/* .accordion-button:focus {
+            z-index: 3;
+            outline: 0;
+            box-shadow: 0 0 0 0;
+            border: 0px solid white;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            color: #f86530;
+            font-size: 1.8rem;
+        } */
+
+
+/* .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD7F52'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            transform: rotate(-180deg);
+        } */
+
+.accordion:after {
+    content: '\2770';
+    transform: rotate(270deg);
+    color: #777;
+    font-weight: bold;
+    width: 20px;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\2770';
+    transform: rotate(90deg);
+    color: black;
+}
+
+iframe {
+    margin: 10px;
+    width: 50vw;
+    height: 450px;
+    align-self: center;
+    border-radius: 10px;
+}
+
+
+/* 
 .sucursales {
     display: flex;
     flex-direction: column;
@@ -545,30 +664,9 @@ nav {
         flex-direction: row;
         padding: 0rem 1.25rem;
     }
-    .accordion-button:not(.collapsed) {
-        color: black;
-        background-color: $fondo;
-        box-shadow: none;
-    }
-    .accordion-body:active {
-        width: 1000px;
-    }
-    .accordion-item {
+    .accordion_item {
         border: 2px solid $secundario;
-    }
-    .accordion-button:focus {
-        z-index: 3;
-        outline: 0;
-        box-shadow: 0 0 0 0;
-        border: 0px solid white;
-    }
-    .accordion-button:not(.collapsed) {
-        color: $primario;
-        font-size: 1.8rem;
-    }
-    .accordion-button:not(.collapsed)::after {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD7F52'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-        transform: rotate(-180deg);
+        display: none;
     }
     div {
         button {
@@ -597,7 +695,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-}
+} */
 
 
 /* Arreglo del boostrap - generaba un scroll */
@@ -839,18 +937,10 @@ select {
 
 /* Map */
 
-$redes:("instagram": rgb(202,
-40,
-154),
-"facebook": rgb(31,
-32,
-119),
-"whatsapp": rgb(23,
-167,
-43),
-"mail": rgb(184,
-0,
-0));
+$redes:("instagram": rgb(202, 40, 154),
+"facebook": rgb(31, 32, 119),
+"whatsapp": rgb(23, 167, 43),
+"mail": rgb(184, 0, 0));
 
 /* Each */
 
@@ -1435,7 +1525,7 @@ label {
         .accordion-body:active {
             width: 1000px;
         }
-        .accordion-item {
+        .accordion_item {
             border: 2px solid $secundario;
         }
         .accordion-button:focus {
