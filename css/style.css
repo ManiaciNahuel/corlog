@@ -674,6 +674,7 @@ nav a:hover + div {
   max-height: 65%; }
 
 .btn-seg {
+  margin: 15px;
   justify-content: center;
   padding: 5px;
   border: 2px solid #aeb8c2;
@@ -773,11 +774,10 @@ nav a:hover + div {
   width: 20px;
   float: right;
   margin-left: 5px; }
-
-.accordion.active:after {
-  content: '\2770';
-  transform: rotate(90deg);
-  color: black; }
+  .accordion:after .active:after {
+    content: '\2770';
+    transform: rotate(90deg);
+    color: black; }
 
 iframe {
   margin: 10px;

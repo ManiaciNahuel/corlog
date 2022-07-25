@@ -484,6 +484,7 @@ nav {
 }
 
 .btn-seg {
+    margin: 15px;
     justify-content: center;
     padding: 5px;
     border: 2px solid rgb(174, 184, 194);
@@ -604,12 +605,11 @@ nav {
     width: 20px;
     float: right;
     margin-left: 5px;
-}
-
-.accordion.active:after {
-    content: '\2770';
-    transform: rotate(90deg);
-    color: black;
+    .active:after {
+        content: '\2770';
+        transform: rotate(90deg);
+        color: black;
+    }
 }
 
 iframe {
