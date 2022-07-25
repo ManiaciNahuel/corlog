@@ -634,12 +634,11 @@ nav {
     width: 20px;
     float: right;
     margin-left: 5px;
-}
-
-.active:after {
-    content: '\2770';
-    transform: rotate(90deg);
-    color: black;
+    .active:after {
+        content: '\2770';
+        transform: rotate(90deg);
+        color: black;
+    }
 }
 
 iframe {
@@ -1400,6 +1399,14 @@ label {
     }
     .carousel-1 {
         display: none;
+    }
+    .destinos {
+        margin: 0px;
+    }
+    .sucursales {
+        button {
+            color: black;
+        }
     }
     .localidades {
         align-items: flex-start;
