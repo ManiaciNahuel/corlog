@@ -30,128 +30,134 @@
         target="_blank"><img class="whatsapp2" src="../media/WhatsApp.png" alt="logoWhatsapp"></a>
     <!-- Encabezado fijo-->
     <header id="arriba">
-        <!-- Hamburger Menu -->
+        <!-- Hamburger Menu-->
         <a class="hamburger-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
             aria-controls="offcanvasExample">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
-            <img src="../media/icons8-hamburger-menu-list-with-parallel-navigation-button-65.png"
-                class="hamburger-menu-1" alt="">
-            <img src="../media/iconmonstr-menu-6-72.png" class="hamburger-menu-2" alt=""> </a>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <a href="../index.html">
-                    <h2 class="offcanvas-title" id="offcanvasExampleLabel">CORLOG ARGENTINA</h2>
-                </a> <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul>
-                    <li>
+            <div class="sidenav" id="mySidenav">
+                <a href="javascript:void(0)" class="closepage" onclick="closeNav()">&times;</a>
+                <div id="menu_page">
+                    <div>
                         <a href="../index.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Inicio
+                            <h2 class="offcanvas-title" id="offcanvasExampleLabel">
+                                <img class="logo-img" src="../media/header/logotipo.png" alt="Logo corlog">
+                            </h2>
                         </a>
-                    </li>
-                    <li>
-                        <a href="seguimiento.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Seguir envío
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cotizacion.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Cotizar envío
-                        </a>
-                    </li>
-                    <li>
-                        <a href="destinos.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Destinos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="destinos.html#hrefNuestrasSuc">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Nuestras sucursales
-                        </a>
-                    </li>
-                    <li>
-                        <a href="ayuda.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Ayuda
-                        </a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Nosotros
-                        </a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Servicios
-                        </a>
-                    </li>
-                    <li>
-                        <a href="ayuda.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Redes
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-        <!-- Redes -->
-        <ul class="social">
-            <li>
-                <a href="https://www.instagram.com/corlogargentina/" target="_blank"> <img
-                        src="../media/header/instagram.png" alt=""></a>
-            </li>
-            <li>
-                <a class="wa1"
-                    href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
-                    target="_blank"><img src="../media/header/wapp.png" alt="logoWhatsapp"></a>
-                <a class="wa2"
-                    href="https://api.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
-                    target="_blank"><img src="../media/header/wapp.png" alt="logoWhatsapp"></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/corlogargentina" target="_blank"> <img
-                        src="../media/header/facebook.png" alt=""></a>
-            </li>
-            <li>
-                <a href="mailto:corlogargentina@gmail.com" target="_blank"><img src="../media/header/gmail.png"
-                        alt=""></a>
-            </li>
-        </ul>
-        <!-- Logo -->
-        <div class="logo">
-            <a href="../index.html"><img class="logo-img" src="../media/header/logo.png" alt="Logo corlog"></a>
-        </div>
-        <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
-        <!-- Opciones header -->
-        <nav>
-            <ul class="flexMenu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="seguimiento.html">Seguir envío</a>
-                    <div class="hoverSeguimiento">Realizá el seguimiento de tus <br> encomiendas enviadas por Corlog
                     </div>
+                    <ul>
+
+                        <li>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        </li>
+                        <li>
+                            <a href="../index.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/seguimiento.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Seguir envío
+                            </a>
+                        </li>
+                        <li> <a href="../pages/cotizacion.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Cotizar envío
+                            </a></li>
+                        <li>
+                            <a href="../pages/destinos.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Destinos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/destinos.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Nuestras sucursales
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="../pages/ayuda.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Ayuda
+                            </a>
+                        </li>
+                        <li> <a href="../pages/nosotros.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Nosotros
+                            </a></li>
+                        <li>
+                            <a href="../pages/nosotros.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/ayuda.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Redes
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </a>
+        <!-- Redes -->
+        <div id="header_1">
+            <ul class="social">
+                <li>
+                    <a href="https://www.instagram.com/corlogargentina/" target="_blank"> <img
+                            src="../media/header/instagram.png" alt=""></a>
                 </li>
-                <li><a href="cotizacion.html">Cotizar envío</a></li>
-                <li><a href="destinos.html">Destinos</a>
-                    <div class="hoverDestinos">Conoce todos los puntos del<br> país a los que llegamos</div>
+                <li>
+                    <a class="wa1"
+                        href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
+                        target="_blank"><img src="../media/header/wapp.png" alt="logoWhatsapp"></a>
+                    <a class="wa2"
+                        href="https://api.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
+                        target="_blank"><img src="../media/header/wapp.png" alt="logoWhatsapp"></a>
                 </li>
-                <li><a href="ayuda.html">Ayuda</a></li>
+                <li>
+                    <a href="https://www.facebook.com/corlogargentina" target="_blank"> <img
+                            src="../media/header/facebook.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="mailto:corlogargentina@gmail.com" target="_blank"><img src="../media/header/gmail.png"
+                            alt=""></a>
+                </li>
             </ul>
-        </nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html"><img class="logo-img" src="../media/header/logo.png" alt="Logo corlog"></a>
+            </div>
+            <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
+            <!-- Opciones header -->
+            <nav>
+                <ul class="flexMenu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="seguimiento.html">Seguir envío</a>
+                        <div class="hoverSeguimiento">Realizá el seguimiento de tus <br> encomiendas enviadas por Corlog
+                        </div>
+                    </li>
+                    <li><a href="cotizacion.html">Cotizar envío</a></li>
+                    <li><a href="destinos.html">Destinos</a>
+                        <div class="hoverDestinos">Conoce todos los puntos del<br> país a los que llegamos</div>
+                    </li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <br>
-    <main class="mainCot">
+    <main id="main" class="mainCot">
         <h2 class="textAlignCenter">COTIZACIÓN DE ENVÍO</h2>
 
         <form class="containerCot" action="https://formsubmit.co/a89f0c4961edd0e8fe268faaf49e7316" method="post">
@@ -499,6 +505,7 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
+    <script src="../app.js"></script>
 </body>
 
 </html>

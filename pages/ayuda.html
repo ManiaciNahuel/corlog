@@ -18,228 +18,314 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon.ico">
     <!-- Descripción -->
-    <meta name="description" content="Te ayudamos a resolver cualquier tipo de duda que puedas tener con respecto a nuestros servicios.">
+    <meta name="description"
+        content="Te ayudamos a resolver cualquier tipo de duda que puedas tener con respecto a nuestros servicios.">
 
 </head>
 
 <body class="containerAyuda">
     <!-- Whatsapp -->
-    <a href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..." target="_blank"><img class="whatsapp1" src="../media/WhatsApp.png" alt="logoWhatsapp"></a>
-    <a href="https://api.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..." target="_blank"><img class="whatsapp2" src="../media/WhatsApp.png" alt="logoWhatsapp"></a>
+    <a href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
+        target="_blank"><img class="whatsapp1" src="../media/WhatsApp.png" alt="logoWhatsapp"></a>
+    <a href="https://api.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
+        target="_blank"><img class="whatsapp2" src="../media/WhatsApp.png" alt="logoWhatsapp"></a>
     <!-- Encabezado fijo-->
     <header id="arriba">
-        <!-- Hamburger Menu -->
-        <a class="hamburger-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <!-- Hamburger Menu-->
+        <a class="hamburger-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
-            <img src="../media/icons8-hamburger-menu-list-with-parallel-navigation-button-65.png" class="hamburger-menu-1" alt="">
-            <img src="../media/iconmonstr-menu-6-72.png" class="hamburger-menu-2" alt=""> </a>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <a href="../index.html">
-                    <h2 class="offcanvas-title" id="offcanvasExampleLabel">CORLOG ARGENTINA</h2>
-                </a> <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul>
-                    <li>
+            <div class="sidenav" id="mySidenav">
+                <a href="javascript:void(0)" class="closepage" onclick="closeNav()">&times;</a>
+                <div id="menu_page">
+                    <div>
                         <a href="../index.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Inicio</a>
-                    </li>
-                    <li>
-                        <a href="seguimiento.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Seguir envío</a>
-                    </li>
-                    <li>
-                        <a href="cotizacion.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Cotizar envío</a>
-                    </li>
-                    <li>
-                        <a href="destinos.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Destinos</a>
-                    </li>
-                    <li>
-                        <a href="destinos.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Nuestras sucursales</a>
-                    </li>
-                    <li>
-                        <a href="ayuda.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Ayuda</a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html#servicios">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Servicios</a>
-                    </li>
-                    <li>
-                        <a href="ayuda.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Redes</a>
-                    </li>
+                            <h2 class="offcanvas-title" id="offcanvasExampleLabel">
+                                <img class="logo-img" src="../media/header/logotipo.png" alt="Logo corlog">
+                            </h2>
+                        </a>
+                    </div>
+                    <ul>
 
-                </ul>
+                        <li>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        </li>
+                        <li>
+                            <a href="../index.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/seguimiento.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Seguir envío
+                            </a>
+                        </li>
+                        <li> <a href="../pages/cotizacion.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Cotizar envío
+                            </a></li>
+                        <li>
+                            <a href="../pages/destinos.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Destinos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/destinos.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Nuestras sucursales
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="../pages/ayuda.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Ayuda
+                            </a>
+                        </li>
+                        <li> <a href="../pages/nosotros.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Nosotros
+                            </a></li>
+                        <li>
+                            <a href="../pages/nosotros.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/ayuda.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Redes
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
             </div>
-        </div>
+        </a>
         <!-- Redes -->
-        <ul class="social">
-            <li>
-                <a href="https://www.instagram.com/corlogargentina/" target="_blank"> <img src="../media/header/instagram.png" alt=""></a>
-            </li>
-            <li>
-                <a class="wa1" href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..." target="_blank"><img src="../media/header/wapp.png" alt="logoWhatsapp"></a>
-                <a class="wa2" href="https://api.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..." target="_blank"><img src="../media/header/wapp.png" alt="logoWhatsapp"></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/corlogargentina" target="_blank"> <img src="../media/header/facebook.png" alt=""></a>
-            </li>
-            <li>
-                <a href="mailto:corlogargentina@gmail.com" target="_blank"><img src="../media/header/gmail.png" alt=""></a>
-            </li>
-        </ul>
-        <!-- Logo -->
-        <div class="logo">
-            <a href="../index.html"><img class="logo-img" src="../media/header/logo.png" alt="Logo corlog"></a>
-        </div>
-        <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
-        <nav>
-            <ul class="flexMenu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="seguimiento.html">Seguir envío</a>
-                    <div class="hoverSeguimiento">Realizá el seguimiento de tus <br> encomiendas enviadas por Corlog</div>
+        <div id="header_1">
+            <ul class="social">
+                <li>
+                    <a href="https://www.instagram.com/corlogargentina/" target="_blank"> <img
+                            src="../media/header/instagram.png" alt=""></a>
                 </li>
-                <li><a href="cotizacion.html">Cotizar envío</a></li>
-                <li><a href="destinos.html">Destinos</a>
-                    <div class="hoverDestinos">Conocé los puntos del<br>país a los que llegamos<br>y nuestras sucursales</div>
+                <li>
+                    <a class="wa1"
+                        href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
+                        target="_blank"><img src="../media/header/wapp.png" alt="logoWhatsapp"></a>
+                    <a class="wa2"
+                        href="https://api.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
+                        target="_blank"><img src="../media/header/wapp.png" alt="logoWhatsapp"></a>
                 </li>
-                <li><a href="ayuda.html">Ayuda</a></li>
+                <li>
+                    <a href="https://www.facebook.com/corlogargentina" target="_blank"> <img
+                            src="../media/header/facebook.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="mailto:corlogargentina@gmail.com" target="_blank"><img src="../media/header/gmail.png"
+                            alt=""></a>
+                </li>
             </ul>
-        </nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html"><img class="logo-img" src="../media/header/logo.png" alt="Logo corlog"></a>
+            </div>
+            <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
+            <nav>
+                <ul class="flexMenu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="seguimiento.html">Seguir envío</a>
+                        <div class="hoverSeguimiento">Realizá el seguimiento de tus <br> encomiendas enviadas por Corlog
+                        </div>
+                    </li>
+                    <li><a href="cotizacion.html">Cotizar envío</a></li>
+                    <li><a href="destinos.html">Destinos</a>
+                        <div class="hoverDestinos">Conocé los puntos del<br>país a los que llegamos<br>y nuestras
+                            sucursales
+                        </div>
+                    </li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <br>
+    <main id="main" class="main-ayuda">
+        <!-- Información de contacto e inputs para info -->
+        <h2 id="titulo">INFORMACIÓN DE CONTACTO Y AYUDA</h2>
 
-    <!-- Información de contacto e inputs para info -->
-    <h2 id="titulo">INFORMACIÓN DE CONTACTO Y AYUDA</h2>
+        <div id="main" class="redes">
 
-    <div class="redes">
-
-        <div class="form__info">
-            <h3> Teléfonos de cada sucursal</h3>
-            <ul>
-                <li>Córdoba - 3517335050</li>
-                <li>Buenos Aires - 1162343179</li>
-                <li>Rosario - 3414374452</li>
+            <div class="form__info">
+                <h3> Teléfonos de cada sucursal</h3>
+                <ul>
+                    <li>Córdoba - 3517335050</li>
+                    <li>Buenos Aires - 1162343179</li>
+                    <li>Rosario - 3414374452</li>
+                </ul>
+                <p>Si necesita más información sobre nuestras sucursales haciendo <a
+                        href="destinos.html#hrefNuestrasSuc">click acá</a> encontrará lo que busca.</p>
+            </div>
+            <h3>REDES y CONTACTO</h3>
+            <ul class="ul-horizontal">
+                <li class="red--instagram">
+                    <a href="https://www.instagram.com/corlogargentina/"> Instagram
+                    </a>
+                </li>
+                <li class="red--whatsapp">
+                    <a href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
+                        target="_blank">WhatsApp</a>
+                </li>
+                <li class="red--facebook"><a href="https://www.facebook.com/corlogargentina" target="_blank">Facebook
+                    </a></li>
+                <li class="red--mail"><a href="mailto:corlogargentina@gmail.com" target="_blank">Correo electrónico</a>
+                </li>
             </ul>
-            <p>Si necesita más información sobre nuestras sucursales haciendo <a href="destinos.html#hrefNuestrasSuc">click acá</a> encontrará lo que busca.</p>
+
         </div>
-        <h3>REDES y CONTACTO</h3>
-        <ul class="ul-horizontal">
-            <li class="red--instagram">
-                <a href="https://www.instagram.com/corlogargentina/"> Instagram
-                </a>
-            </li>
-            <li class="red--whatsapp">
-                <a href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..." target="_blank">WhatsApp</a></li>
-            <li class="red--facebook"><a href="https://www.facebook.com/corlogargentina" target="_blank">Facebook
-            </a></li>
-            <li class="red--mail"><a href="mailto:corlogargentina@gmail.com" target="_blank">Correo electrónico</a>
-            </li>
-        </ul>
+        <!-- Form ubicado a la derecha -->
+        <h2 class="textAlignCenter">PREGUNTAS FRECUENTES</h2>
 
-    </div>
-    <!-- Form ubicado a la derecha -->
-    <h2 class="textAlignCenter">PREGUNTAS FRECUENTES</h2>
+        <section class="form form_ext">
 
-    <section class="form form_ext">
-
-        <div class="preg_y_resp">
-            <h3>¿Qué servicios ofrecen?</h3>
-            <ul>
-                <li>Encomiendas (Bultos varios – Paquetes)</li>
-                <li>Cargas general en pallet y/o m3</li>
-                <li>Servicios a empresas</li>
-                <li>Cargas Peligrosas</li>
-                <li>Contra reembolso</li>
-                <li>Servicios punto a punto</li>
-                <li>Retiros y entregas en domicilios</li>
-                <li>Distribución estándar y especiales</li>
-                <li>Mudanzas</li>
-                <li>E-commerce</li>
-                <li>Gestiones</li>
-                <li>Centro de envió y recepción para Mercado libre</li>
-            </ul>
-            <h3>¿Cuánto cuesta un envío?</h3>
-            <p>
-                En función a las variables que presenta cada envió (destino, cantidad de bultos, peso, medidas, etc.), lo invitamos a que nos consulte en la sección <a href="cotizacion.html">cotización </a> y le brindaremos la información correspondiente.
-            </p>
-            <h3>¿A qué localidades llegan?</h3>
-            <p>
-                Nuestros destinos son Córdoba, Buenos Aires, Rosario, Villa Dolores, Rio IV, Río III, San Francisco, La Rioja, San Fernando del Valle de Catamarca. Al ser un centro logístico contamos con empresas partner que nos permiten llegar a todo el territorio Nacional.
-            </p>
-            <h3>¿Realizan embalajes?</h3>
-            <p>
-                No. El embalaje es a cargo del cliente.
-            </p>
-            <h3>¿Qué datos tiene que tener la encomienda para realizar el envío?</h3>
-            <p>Todo tipo de envío que realice debe tener los datos que a continuación te informamos, es importante que no falte ninguno, así podemos realizar el servicio en forma correcta. Los campos que solicitamos son de carácter OBLIGATORIO y corresponden
-                al remitente y al destinatario. </p>
-            <ul>
-                <li>NOMBRE o APELLIDO</li>
-                <li>DNI o CUIT</li>
-                <li>TELEFONO </li>
-                <li>DIRECCIÓN (Sólo si es a domicilio)</li>
-                <li>LOCALIDAD</li>
-                <li>PROVINCIA</li>
-            </ul>
-            <h3>¿Mi encomienda tiene seguro?</h3>
-            <p>Sí. Por ley su encomienda tiene un seguro, el valor declarado mínimo es de $ 1.000 por bulto, pero puede asegurarlo por el monto del valor del contenido o por el monto que dispongas. La suma máxima la establecemos al momento del envió. El
-                porcentaje de seguro a aplicar en nuestra empresa, CORLOS ARGENTINA es del 3%. El seguro cubre robo o hurto del continente (caja o bulto), no cubre faltantes de contenido ni roturas por negligencia en el embalaje. Cabe destacar que si
-                desea declarar más del mínimo es necesario que el envío viaje con un remito adjuntado.</p>
-            <h3>¿Qué debe que presentar el destinatario para poder retirar o recibir el envío?</h3>
-            <p>Debe presentar DNI si es persona física o autorización con membrete si es empresa.</p>
-            <h3>¿Puede retirar un tercero?</h3>
-            <p>Sí, debe llevar una autorización firmada con los datos del destinatario y de la persona autorizada a retirar, además debe adjuntar una fotocopia del DNI del destinatario.</p>
-            <h3>¿Cómo embalo mi encomienda correctamente?</h3>
-            <p>Su encomienda es muy importante para nosotros y necesitamos que este muy bien embalada. No envíe elementos sueltos dentro de la caja, utilice cajas resistentes, si usa cajas recicladas, controle que no tenga rupturas o rajaduras, no envíe
-                líquidos. Aclare con carteles si el contenido es frágil, utilice una buena cinta para cerrarla, cierre para minimizar el riesgo de que se abra la caja en el viaje. Evite enviar bolsas con contenido, si no tiene otra opción, envuélvala
-                con muchas bolsas y cinta o film. Existen elementos para embalajes, como el cartón corrugado, trozos de telgopor, pluripol, strich, bolsas con aire, entre otros. Utilícelos, son muy eficaces al momento de embalar tu encomienda y no correr
-                riesgo de que se rompa.
-            </p>
-            <h3>¿Puedo pedir una recolección/retiro en mi domicilio?</h3>
-            <p>Sí. Preferentemente solicitamos que lo pida un día antes, caso contrario, realizarlo antes de las 10.30 hs y arbitramos los medios para retirarlo el mismo día, dependiendo de la zona. </p>
-            <h3>¿Cómo puedo pagar?</h3>
-            <p>Le brindamos todos los medios de pagos: efectivo, transferencia bancaria, tarjetas de débito y crédito, mercado pago, cheques físicos (previo scoring) e e-cheque.
-            </p>
-            <h3>Si no estoy presente en mi domicilio, ¿puede recibir otra persona?</h3>
-            <p>Sí. La condición es que sea mayor de 18 años y solo entregamos en el domicilio indicado en la encomienda.
-            </p>
-            <h3>¿Si no hay nadie en mi domicilio como recupero mi encomienda?</h3>
-            <p>Te dejaremos un aviso de visita, se contacta con nosotros y coordinamos la entrega.</p>
-            <h3>¿Cuánto tiempo guardan mi encomienda?</h3>
-            <p>Si por algún motivo no pudimos entregarle su encomienda, la misma queda en guarda por 30 días, pasado ese tiempo y agotado toda instancia de entrega, se decomisa y queda en donación o destrucción ante una autoridad pública.</p>
-            <h3>¿Puedo realizar algún cambio posterior al despacho del envío?</h3>
-            <p>Sí, puede hacer todos los cambios que quiera, siempre y cuando la misma aún esté en previo proceso de reparto.</p>
-            <h3>¿Cuáles son los elementos prohibidos para transportar?</h3>
-            <p>Sustancias inflamables, corrosivos, explosivos, contaminantes y precursores químicos. Armas, pólvora, municiones y afines. Drogas, estupefacientes, medicamentos psicotrópicos y psicofármacos en general. Obras de arte y joyas. Elementos líquidos,
-                frágiles y/o explosivos. Sustancias de carácter infeccioso y/o peligroso. Plantas y animales vivos. Dinero en efectivo, cheques u otros valores, tarjetas de crédito, débito o compra, billetes de lotería y/o cualquier otro tipo de comprobante
-                de juego de azar. Alimentos perecederos. Materiales magnéticos, radioactivos y biológicos. Presentaciones en licitaciones y/o concursos de precios. Cualquier otra sustancia y/o material que no es permitida por la normativa postal o cuyo
-                uso o tenencia esté penado legalmente o que se hubiera obtenido en violación a normas del Código Aduanero y/o de cualquier otra normativa vigente, como también publicaciones de carácter presuntamente inmoral o delictuoso, cuya circulación
-                esté prohibida en la República Argentina. <br> <b> NOTA: </b> Una de nuestras unidades de negocio es CARGA PELIGROSA, en este caso son servicios especiales y a medida del cliente. Consúltenos.
-            </p>
-        </div>
-    </section>
-    <br>
-
+            <div class="preg_y_resp">
+                <h3>¿Qué servicios ofrecen?</h3>
+                <ul>
+                    <li>Encomiendas (Bultos varios – Paquetes)</li>
+                    <li>Cargas general en pallet y/o m3</li>
+                    <li>Servicios a empresas</li>
+                    <li>Cargas Peligrosas</li>
+                    <li>Contra reembolso</li>
+                    <li>Servicios punto a punto</li>
+                    <li>Retiros y entregas en domicilios</li>
+                    <li>Distribución estándar y especiales</li>
+                    <li>Mudanzas</li>
+                    <li>E-commerce</li>
+                    <li>Gestiones</li>
+                    <li>Centro de envió y recepción para Mercado libre</li>
+                </ul>
+                <h3>¿Cuánto cuesta un envío?</h3>
+                <p>
+                    En función a las variables que presenta cada envió (destino, cantidad de bultos, peso, medidas,
+                    etc.),
+                    lo invitamos a que nos consulte en la sección <a href="cotizacion.html">cotización </a> y le
+                    brindaremos
+                    la información correspondiente.
+                </p>
+                <h3>¿A qué localidades llegan?</h3>
+                <p>
+                    Nuestros destinos son Córdoba, Buenos Aires, Rosario, Villa Dolores, Rio IV, Río III, San Francisco,
+                    La
+                    Rioja, San Fernando del Valle de Catamarca. Al ser un centro logístico contamos con empresas partner
+                    que
+                    nos permiten llegar a todo el territorio Nacional.
+                </p>
+                <h3>¿Realizan embalajes?</h3>
+                <p>
+                    No. El embalaje es a cargo del cliente.
+                </p>
+                <h3>¿Qué datos tiene que tener la encomienda para realizar el envío?</h3>
+                <p>Todo tipo de envío que realice debe tener los datos que a continuación te informamos, es importante
+                    que
+                    no falte ninguno, así podemos realizar el servicio en forma correcta. Los campos que solicitamos son
+                    de
+                    carácter OBLIGATORIO y corresponden
+                    al remitente y al destinatario. </p>
+                <ul>
+                    <li>NOMBRE o APELLIDO</li>
+                    <li>DNI o CUIT</li>
+                    <li>TELEFONO </li>
+                    <li>DIRECCIÓN (Sólo si es a domicilio)</li>
+                    <li>LOCALIDAD</li>
+                    <li>PROVINCIA</li>
+                </ul>
+                <h3>¿Mi encomienda tiene seguro?</h3>
+                <p>Sí. Por ley su encomienda tiene un seguro, el valor declarado mínimo es de $ 1.000 por bulto, pero
+                    puede
+                    asegurarlo por el monto del valor del contenido o por el monto que dispongas. La suma máxima la
+                    establecemos al momento del envió. El
+                    porcentaje de seguro a aplicar en nuestra empresa, CORLOS ARGENTINA es del 3%. El seguro cubre robo
+                    o
+                    hurto del continente (caja o bulto), no cubre faltantes de contenido ni roturas por negligencia en
+                    el
+                    embalaje. Cabe destacar que si
+                    desea declarar más del mínimo es necesario que el envío viaje con un remito adjuntado.</p>
+                <h3>¿Qué debe que presentar el destinatario para poder retirar o recibir el envío?</h3>
+                <p>Debe presentar DNI si es persona física o autorización con membrete si es empresa.</p>
+                <h3>¿Puede retirar un tercero?</h3>
+                <p>Sí, debe llevar una autorización firmada con los datos del destinatario y de la persona autorizada a
+                    retirar, además debe adjuntar una fotocopia del DNI del destinatario.</p>
+                <h3>¿Cómo embalo mi encomienda correctamente?</h3>
+                <p>Su encomienda es muy importante para nosotros y necesitamos que este muy bien embalada. No envíe
+                    elementos sueltos dentro de la caja, utilice cajas resistentes, si usa cajas recicladas, controle
+                    que no
+                    tenga rupturas o rajaduras, no envíe
+                    líquidos. Aclare con carteles si el contenido es frágil, utilice una buena cinta para cerrarla,
+                    cierre
+                    para minimizar el riesgo de que se abra la caja en el viaje. Evite enviar bolsas con contenido, si
+                    no
+                    tiene otra opción, envuélvala
+                    con muchas bolsas y cinta o film. Existen elementos para embalajes, como el cartón corrugado, trozos
+                    de
+                    telgopor, pluripol, strich, bolsas con aire, entre otros. Utilícelos, son muy eficaces al momento de
+                    embalar tu encomienda y no correr
+                    riesgo de que se rompa.
+                </p>
+                <h3>¿Puedo pedir una recolección/retiro en mi domicilio?</h3>
+                <p>Sí. Preferentemente solicitamos que lo pida un día antes, caso contrario, realizarlo antes de las
+                    10.30
+                    hs y arbitramos los medios para retirarlo el mismo día, dependiendo de la zona. </p>
+                <h3>¿Cómo puedo pagar?</h3>
+                <p>Le brindamos todos los medios de pagos: efectivo, transferencia bancaria, tarjetas de débito y
+                    crédito,
+                    mercado pago, cheques físicos (previo scoring) e e-cheque.
+                </p>
+                <h3>Si no estoy presente en mi domicilio, ¿puede recibir otra persona?</h3>
+                <p>Sí. La condición es que sea mayor de 18 años y solo entregamos en el domicilio indicado en la
+                    encomienda.
+                </p>
+                <h3>¿Si no hay nadie en mi domicilio como recupero mi encomienda?</h3>
+                <p>Te dejaremos un aviso de visita, se contacta con nosotros y coordinamos la entrega.</p>
+                <h3>¿Cuánto tiempo guardan mi encomienda?</h3>
+                <p>Si por algún motivo no pudimos entregarle su encomienda, la misma queda en guarda por 30 días, pasado
+                    ese
+                    tiempo y agotado toda instancia de entrega, se decomisa y queda en donación o destrucción ante una
+                    autoridad pública.</p>
+                <h3>¿Puedo realizar algún cambio posterior al despacho del envío?</h3>
+                <p>Sí, puede hacer todos los cambios que quiera, siempre y cuando la misma aún esté en previo proceso de
+                    reparto.</p>
+                <h3>¿Cuáles son los elementos prohibidos para transportar?</h3>
+                <p>Sustancias inflamables, corrosivos, explosivos, contaminantes y precursores químicos. Armas, pólvora,
+                    municiones y afines. Drogas, estupefacientes, medicamentos psicotrópicos y psicofármacos en general.
+                    Obras de arte y joyas. Elementos líquidos,
+                    frágiles y/o explosivos. Sustancias de carácter infeccioso y/o peligroso. Plantas y animales vivos.
+                    Dinero en efectivo, cheques u otros valores, tarjetas de crédito, débito o compra, billetes de
+                    lotería
+                    y/o cualquier otro tipo de comprobante
+                    de juego de azar. Alimentos perecederos. Materiales magnéticos, radioactivos y biológicos.
+                    Presentaciones en licitaciones y/o concursos de precios. Cualquier otra sustancia y/o material que
+                    no es
+                    permitida por la normativa postal o cuyo
+                    uso o tenencia esté penado legalmente o que se hubiera obtenido en violación a normas del Código
+                    Aduanero y/o de cualquier otra normativa vigente, como también publicaciones de carácter
+                    presuntamente
+                    inmoral o delictuoso, cuya circulación
+                    esté prohibida en la República Argentina. <br> <b> NOTA: </b> Una de nuestras unidades de negocio es
+                    CARGA PELIGROSA, en este caso son servicios especiales y a medida del cliente. Consúltenos.
+                </p>
+            </div>
+        </section>
+        <br>
+    </main>
     <footer>
         <!-- Información sobre la empresa y su servicios -->
 
@@ -280,10 +366,16 @@
     <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
     <script src="../boostrap/js/bootstrap.js"></script>
     <script src="../bootstrap_sass/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="../app.js"></script>
 </body>
 
 </html>

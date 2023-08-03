@@ -316,6 +316,58 @@ body {
   body section ul li {
     font-size: large; }
 
+#menu_page {
+  width: 370px;
+  border-right: 7px solid #f865319c;
+  border-end-end-radius: 150px;
+  background-color: #FFFFFD;
+  height: 100%;
+  padding: 10px;
+  z-index: 1; }
+
+.sidenav {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden; }
+  .sidenav img {
+    width: auto; }
+  .sidenav ul li {
+    list-style: none; }
+
+.sidenav a {
+  flex-wrap: nowrap;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  /* transition: 0.3s; */ }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: -23px;
+  left: 250px;
+  font-size: 70px;
+  margin-left: 50px;
+  padding: 0px; }
+
+.sidenav .closepage {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
 #AAA {
   list-style-type: none; }
 
@@ -335,7 +387,7 @@ main {
 /* MARQUEE - SLIDE EMPRESAS */
 :root {
   --marquee-width: 80vw;
-  --marquee-height: 40vh;
+  --marquee-height: 30vh;
   /* --marquee-elements: 12; */
   /* defined with JavaScript */
   --marquee-elements-displayed: 5;
@@ -385,8 +437,9 @@ main {
 .marquee-content li {
   display: flex;
   justify-content: center;
+  padding: 5px;
   align-items: center;
-  /* text-align: center; */
+  text-align: center;
   flex-shrink: 0;
   width: var(--marquee-element-width);
   max-height: 100%;
@@ -537,7 +590,6 @@ header {
   border-end-end-radius: 150px; }
 
 .offcanvas-title {
-  padding-left: 8px;
   color: #1fb6f4; }
   .offcanvas-title:hover {
     color: #f86530; }
@@ -714,10 +766,22 @@ nav a:hover + div {
   margin: 20px;
   margin-top: 0; }
 
-/* .accordion:hover {
-    background-color: rgba(250, 169, 64, 0.746);
-    cursor: pointer;
-} */
+.boton-cot {
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid #aeb8c2;
+  border-radius: 10px;
+  color: #606060;
+  -webkit-text-fill-color: #606060; }
+
+.boton-cot:hover {
+  color: white;
+  -webkit-text-fill-color: white;
+  background-color: #1fb6f4; }
+
+.margin-bottom {
+  margin-bottom: 15px; }
+
 .sucursales {
   width: 100%;
   display: flex;
@@ -999,8 +1063,7 @@ select {
 /* Grid AYUDA */
 #titulo {
   text-align: center;
-  justify-self: stretch;
-  margin-top: 160px; }
+  justify-self: stretch; }
 
 #tituloNos {
   margin-top: 30px; }
@@ -1261,7 +1324,7 @@ label {
 .opcion-3 {
   color: #1ca81c; }
 
-/*  Small devices (landscape phones, tablets, 576px and up) */
+/*  Small devices (landscape phones, tablets, 600px and up) */
 @media (min-width: 601px) and (max-width: 870px) {
   header {
     position: absolute;
@@ -1335,6 +1398,21 @@ label {
     height: 151px;
     border-radius: 3px;
     grid-area: header; }
+  #menu_page {
+    width: 80%;
+    border-bottom: 2px solid #f865319c;
+    height: 90%; }
+    #menu_page img {
+      padding: 0px;
+      width: 210px;
+      height: auto; }
+    #menu_page .closebtn {
+      font-size: 70px;
+      top: -28px;
+      right: 88px;
+      left: auto; }
+    #menu_page li a {
+      font-size: 18px; }
   .hamburger-menu {
     top: 74px;
     position: absolute;
@@ -1423,6 +1501,24 @@ label {
     display: none; }
   .textArea {
     width: 350px; }
+  .main-ayuda {
+    padding-top: 80px; }
+  /* Page Ayuda */
+  .redes {
+    padding: 5px; }
+    .redes .ul-horizontal {
+      justify-content: space-evenly;
+      display: flex;
+      flex-direction: column;
+      padding: 10px; }
+  .preg_y_resp {
+    padding: 2px;
+    margin: 0px; }
+    .preg_y_resp ul li {
+      font-size: medium; }
+  .form__info {
+    padding: 5px;
+    margin: 0px; }
   .containerAyuda {
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 0.75fr 0.2fr 0.5fr repeat(3, 0.75fr) auto;
@@ -1455,6 +1551,7 @@ label {
       padding: 0px;
       border-radius: 50px;
       border: 2px solid #ffcd80; }
+  /* Preguntas cotizacion */
   .preguntas {
     width: 90%;
     display: flex;
@@ -1486,7 +1583,8 @@ label {
     .sucursales .accordion-body:active {
       width: 1000px; }
     .sucursales .accordion_item {
-      width: 92%; }
+      width: 92%;
+      height: auto; }
     .sucursales .accordion-button:focus {
       z-index: 3;
       outline: 0;

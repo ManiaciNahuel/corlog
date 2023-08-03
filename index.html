@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap " rel="stylesheet ">
     <!-- Title  -->
-    <title>Corlog - Inicioa</title>
+    <title>Corlog Argentina</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="media/favicon.ico">
     <!-- Descripción -->
@@ -34,126 +34,133 @@
         <!-- Hamburger Menu -->
         <a class="hamburger-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
             aria-controls="offcanvasExample">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
-            <img src="media/icons8-hamburger-menu-list-with-parallel-navigation-button-65.png" class="hamburger-menu-1"
-                alt="">
-            <img src="media/iconmonstr-menu-6-72.png" class="hamburger-menu-2" alt=""> </a>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <a href="index.html">
-                    <h2 class="offcanvas-title" id="offcanvasExampleLabel">CORLOG ARGENTINA</h2>
-                </a>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul>
-                    <li>
+            <div class="sidenav" id="mySidenav">
+                <a href="javascript:void(0)" class="closepage" onclick="closeNav()">&times;</a>
+                <div id="menu_page">
+                    <div>
                         <a href="index.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Inicio
+                            <h2 class="offcanvas-title" id="offcanvasExampleLabel">
+                                <img class="logo-img" src="media/header/logotipo.png" alt="Logo corlog">
+                            </h2>
                         </a>
-                    </li>
-                    <li>
-                        <a href="pages/seguimiento.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Seguir envío
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/cotizacion.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Cotizar envío
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/destinos.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Destinos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/destinos.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Nuestras sucursales
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/ayuda.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Ayuda
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/nosotros.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Nosotros
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/nosotros.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Servicios
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/ayuda.html">
-                            <p class="emoji-1">&#128310;</p>
-                            <p class="emoji-dos">&#128311;</p> Redes
-                        </a>
-                    </li>
+                    </div>
+                    <ul>
 
-                </ul>
+                        <li>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/seguimiento.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Seguir envío
+                            </a>
+                        </li>
+                        <li> <a href="pages/cotizacion.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Cotizar envío
+                            </a></li>
+                        <li>
+                            <a href="pages/destinos.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Destinos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/destinos.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Nuestras sucursales
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="pages/ayuda.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Ayuda
+                            </a>
+                        </li>
+                        <li> <a href="pages/nosotros.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Nosotros
+                            </a></li>
+                        <li>
+                            <a href="pages/nosotros.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/ayuda.html">
+                                <p class="emoji-1">&#128310;</p>
+                                <p class="emoji-dos">&#128311;</p> Redes
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
             </div>
-        </div>
+        </a>
         <!-- Redes -->
-        <ul class="social">
-            <li>
-                <a href="https://www.instagram.com/corlogargentina/" target="_blank"> <img
-                        src="media/header/instagram.png" alt=""></a>
-            </li>
-            <li>
-                <a class="wa1"
-                    href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
-                    target="_blank"><img src="media/header/wapp.png" alt="logoWhatsapp"></a>
-                <a class="wa2"
-                    href="https://api.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
-                    target="_blank"><img src="media/header/wapp.png" alt="logoWhatsapp"></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/corlogargentina" target="_blank"> <img src="media/header/facebook.png"
-                        alt=""></a>
-            </li>
-            <li>
-                <a href="mailto:corlogargentina@gmail.com" target="_blank"><img src="media/header/gmail.png" alt=""></a>
-            </li>
-        </ul>
-        <!-- Logo -->
-        <div class="logo">
-            <a href="index.html"><img class="logo-img" src="media/header/logo.png" alt="Logo corlog"></a>
-        </div>
-        <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
-        <nav>
-            <!-- Menú con enlaces -->
-            <ul class="flexMenu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/seguimiento.html">Seguir envío</a>
-                    <div class="hoverSeguimiento">Realizá el seguimiento de tus <br> encomiendas enviadas por Corlog
-                    </div>
+        <div id="header_1">
+
+            <ul class="social">
+                <li>
+                    <a href="https://www.instagram.com/corlogargentina/" target="_blank"> <img
+                            src="media/header/instagram.png" alt=""></a>
                 </li>
-                <li><a href="pages/cotizacion.html">Cotizar envío</a></li>
-                <li><a href="pages/destinos.html">Destinos</a>
-                    <div class="hoverDestinos">Conocé los puntos del<br>país a los que llegamos<br>y nuestras sucursales
-                    </div>
+                <li>
+                    <a class="wa1"
+                        href="https://web.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
+                        target="_blank"><img src="media/header/wapp.png" alt="logoWhatsapp"></a>
+                    <a class="wa2"
+                        href="https://api.whatsapp.com/send?phone=+5493517335050&text=Hola%20Corlog!%20Quiero%20hacer%20una%20consulta..."
+                        target="_blank"><img src="media/header/wapp.png" alt="logoWhatsapp"></a>
                 </li>
-                <li><a href="pages/ayuda.html">Ayuda</a>
+                <li>
+                    <a href="https://www.facebook.com/corlogargentina" target="_blank"> <img
+                            src="media/header/facebook.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="mailto:corlogargentina@gmail.com" target="_blank"><img src="media/header/gmail.png"
+                            alt=""></a>
                 </li>
             </ul>
-        </nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img class="logo-img" src="media/header/logo.png" alt="Logo corlog"></a>
+            </div>
+            <h1 class="sr-only">CORLOG Argentina Transporte & Logistica Integral</h1>
+            <nav>
+                <!-- Menú con enlaces -->
+                <ul class="flexMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/seguimiento.html">Seguir envío</a>
+                        <div class="hoverSeguimiento">Realizá el seguimiento de tus <br> encomiendas enviadas por Corlog
+                        </div>
+                    </li>
+                    <li><a href="pages/cotizacion.html">Cotizar envío</a></li>
+                    <li><a href="pages/destinos.html">Destinos</a>
+                        <div class="hoverDestinos">Conocé los puntos del<br>país a los que llegamos<br>y nuestras
+                            sucursales
+                        </div>
+                    </li>
+                    <li><a href="pages/ayuda.html">Ayuda</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="row"><br>
+    <main id="main" class="row"><br>
 
         <!-- Services-->
         <section class="page-section" id="services">
@@ -190,14 +197,6 @@
         <br>
         <!-- Carousel desktop-->
         <div id="demo" class="carousel carousel-1 textAlignCenter slide" data-ride="carousel">
-
-            <!-- Indicators -->
-            <!--  <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul> -->
-
             <!-- The slideshow -->
             <div class="carousel-inner textAlignCenter">
                 <div class="carousel-item active">
@@ -289,14 +288,12 @@
             <div class="containerEmpresas">
                 <img src="media/index/empresas/mercado_libre.png" alt="logo mercado libre">
                 <img src="media/index/empresas/sendbox.jpg" alt="logo sendbox">
-                <img src="media/index/empresas/via_cargo.jpg" alt="logo via cargo">
+                <img src="media/index/empresas/Integral.png" alt="logo via cargo">
                 <img src="media/index/empresas/buspack.png" alt="logo buspack">
                 <img src="media/index/empresas/Alta-cba.png" alt="logo alta cba">
-                <img src="media/index/empresas/encotrans.jpg" alt="logo encotrans">
                 <img src="media/index/empresas/sierras_pack.jpg" alt="logo sierras pack">
-                <img src="media/index/empresas/ank.jpg" alt="logo ank">
                 <img src="media/index/empresas/andesmar.jpg " alt="logo andesmar">
-                <img src="media/index/empresas/fonopack.jpg " alt="logo fonopack">
+                <img src="media/index/empresas/FONOPACK.png " alt="logo fonopack">
                 <img src="media/index/empresas/tte_maravilla.png " alt="logo transporte maravilla">
                 <img src="media/index/empresas/rutacargo.jpeg" alt="logo rutacargo">
             </div>
@@ -304,20 +301,30 @@
             <div class="marquee textAlignCenter">
                 <ul class="marquee-content">
                     <li><i class="fab"> <img src="media/clientes/aesa.png" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/dopazo y ravena.jpg" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/autocity.png" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/elea.jpg" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/global care.png" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/parra.png" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/seg.jpg" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/reina fabiola.jpeg" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/posada qenti.jpg" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/vegan.jpg" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/herracor.png" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/viga.jpg" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/letreros-colon.png" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/avec.png" alt=""></i></li>
+                    <li><i class="fab"> <img src="media/clientes/sumas.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/BT landi.jpeg" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/caruso.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/cba internacional.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/center flower.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/cerveny.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/cyre.jpg" alt=""></i></li>
-                    <li><i class="fab"><img src="media/clientes/deam.jpg" alt=""></i></li>
-                    <li><i class="fab"><img src="media/clientes/drog  capdevilla.jpg" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/fabrizzi.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/fadea.png" alt=""></i></li>
-                    <li><i class="fab"><img src="media/clientes/FLG.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/Flybondi_logo.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/gp race.png" alt=""></i></li>
-                    <li><i class="fab"> <img src="media/clientes/grupo c3.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/jbg.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/jetsmart.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/laret.jpg" alt=""></i></li>
@@ -329,12 +336,9 @@
                     <li><i class="fab"><img src="media/clientes/novarum.jpg" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/peñon.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/pharmacenter.png" alt=""></i></li>
-                    <li><i class="fab"><img src="media/clientes/Ramon suarez.png" alt=""></i></li>
-                    <li><i class="fab"><img src="media/clientes/resolanas.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/salud renal.jpg" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/san alfonso.jpeg" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/starligth.jpg" alt=""></i></li>
-                    <li><i class="fab"><img src="media/clientes/sushi w.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/twins.png" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/UEPC.jpg" alt=""></i></li>
                     <li><i class="fab"><img src="media/clientes/web.png" alt=""></i></li>

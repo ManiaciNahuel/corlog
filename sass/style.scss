@@ -12,6 +12,7 @@ body {
     font-size: 1.2rem;
     background-color: $fondo;
     height: 100%;
+
     section {
         ul {
             li {
@@ -19,6 +20,71 @@ body {
             }
         }
     }
+}
+
+#menu_page {
+    width: 370px;
+    border-right: 7px solid #f865319c;
+    border-end-end-radius: 150px;
+    background-color: #FFFFFD;
+    height: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.sidenav {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: block;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+
+    img {
+        width: auto;
+    }
+
+    ul {
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.sidenav a {
+    flex-wrap: nowrap;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+    /* transition: 0.3s; */
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -23px;
+    left: 250px;
+    font-size: 70px;
+    margin-left: 50px;
+    padding: 0px;
+}
+
+.sidenav .closepage {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 #AAA {
@@ -98,6 +164,7 @@ main {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
     }
@@ -126,11 +193,13 @@ main {
     html {
         font-size: 12px;
     }
-     :root {
+
+    :root {
         --marquee-width: 100vw;
         --marquee-height: 16vh;
         --marquee-elements-displayed: 3;
     }
+
     .marquee:before,
     .marquee:after {
         width: 5rem;
@@ -227,10 +296,12 @@ header {
 .hamburger-menu {
     position: fixed;
     margin: 17px;
+
     &:hover {
         .hamburger-menu-2 {
             display: none;
         }
+
         .hamburger-menu-1 {
             display: initial;
         }
@@ -254,14 +325,18 @@ header {
 .offcanvas-body {
     li {
         list-style-type: none;
+
         a {
             color: #000000;
             font-size: 1.5rem;
+
             &:hover {
                 color: $primario;
+
                 .emoji-dos {
                     display: none;
                 }
+
                 .emoji-1 {
                     display: initial;
                 }
@@ -302,8 +377,8 @@ header {
 }
 
 .offcanvas-title {
-    padding-left: 8px;
     color: $terciario;
+
     &:hover {
         color: $primario;
     }
@@ -337,6 +412,7 @@ nav {
         flex-direction: row;
         flex-wrap: nowrap;
         padding-left: 1rem;
+
         li {
             a {
                 color: black;
@@ -351,6 +427,7 @@ nav {
             }
         }
     }
+
     a {
         &:hover+div {
             display: block;
@@ -391,6 +468,7 @@ nav {
     li {
         a {
             font-size: 1rem;
+
             &:hover {
                 background-color: $primario;
                 color: #F3F3F3;
@@ -456,6 +534,7 @@ nav {
     right: -4px;
     gap: 6px;
     list-style-type: none;
+
     li img {
         width: 45px;
         height: 45px;
@@ -468,6 +547,7 @@ nav {
 .btn-info {
     background-color: transparent;
     border: none;
+
     &:hover {
         background-color: white;
         border: none;
@@ -491,14 +571,17 @@ nav {
     border-radius: 10px;
     color: #606060;
     -webkit-text-fill-color: #606060;
+
     &:hover {
         color: white;
         -webkit-text-fill-color: white;
         background-color: $terciario;
     }
+
     a {
         text-decoration: none;
         color: #606060;
+
         &:hover {
             color: black;
         }
@@ -524,6 +607,7 @@ nav {
     left: 40%;
     list-style-type: "\1F4CC";
     list-style-position: inherit;
+
     li {
         width: 300px;
     }
@@ -535,10 +619,24 @@ nav {
 }
 
 
-/* .accordion:hover {
-    background-color: rgba(250, 169, 64, 0.746);
-    cursor: pointer;
-} */
+.boton-cot {
+    justify-content: center;
+    padding: 5px;
+    border: 2px solid #aeb8c2;
+    border-radius: 10px;
+    color: #606060;
+    -webkit-text-fill-color: #606060;
+}
+
+.boton-cot:hover {
+    color: white;
+    -webkit-text-fill-color: white;
+    background-color: #1fb6f4;
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
 
 .sucursales {
     width: 100%;
@@ -549,6 +647,7 @@ nav {
     justify-content: center;
     transition: all 2s;
     gap: 25px;
+
     .accordionContainer {
         @extend .textAlignCenter;
         width: 50%;
@@ -556,6 +655,7 @@ nav {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+
     .accordion_item {
         padding: 0 18px;
         display: none;
@@ -568,10 +668,12 @@ nav {
         background-color: $fondo;
         margin-bottom: 14px;
     }
+
     .accordion-body {
         display: flex;
         flex-direction: row;
     }
+
     button {
         position: relative;
         padding: 15px 40px;
@@ -580,6 +682,7 @@ nav {
         border-radius: 10px;
         border: 2px solid #ffcd80;
         background-color: $fondo;
+
         &:hover {
             color: #000;
             background-color: #ffcd80;
@@ -587,10 +690,12 @@ nav {
             border: 2px solid rgb(114, 114, 114);
         }
     }
+
     button p {
         margin: 0px;
         font-size: 20px;
     }
+
     .accordion_item {
         border: 2px solid #ffcd80;
         display: none;
@@ -605,6 +710,7 @@ nav {
     width: 20px;
     float: right;
     margin-left: 5px;
+
     .active:after {
         content: '\2770';
         transform: rotate(90deg);
@@ -678,6 +784,7 @@ iframe {
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x));
+
     &>* {
         flex-shrink: 0;
         width: 100%;
@@ -694,6 +801,7 @@ iframe {
 .page-section {
     padding: 3rem 0;
     display: block;
+
     .serviceContainer {
         display: flex;
         flex-direction: row;
@@ -702,22 +810,27 @@ iframe {
         margin-bottom: 10px;
         row-gap: 70px;
         column-gap: 60px;
+
         a {
             border-radius: 48px;
+
             &:hover {
                 color: black;
             }
+
             div {
                 margin: 6px;
                 height: 300px;
                 width: 300px;
                 transition: all 2s;
                 border-radius: 121px;
+
                 p {
                     position: relative;
                     color: #2c2d2e;
                     top: -66px;
                 }
+
                 h2 {
                     color: black;
                     position: relative;
@@ -727,21 +840,26 @@ iframe {
                     padding: 5px;
                     margin: 19px;
                 }
+
                 &:hover {
                     border-radius: 10px;
                     background-color: #f86530cf;
+
                     h2 {
                         color: white;
                         background-color: #f86530cf;
                     }
+
                     p {
                         color: #d34410;
                         font: bold;
                     }
+
                     img {
                         border-radius: 100px;
                     }
                 }
+
                 img {
                     transition: all 2s;
                     border-radius: 150px;
@@ -791,11 +909,13 @@ iframe {
 .empresas {
     display: flex;
     flex-direction: column;
+
     .containerEmpresas {
         img {
             width: 250px;
             transition: background-color 3s;
             padding: 20px;
+
             &:hover {
                 transform: scale(1.2, 1.2);
             }
@@ -825,6 +945,7 @@ iframe {
 
 .animacion {
     transition: background-color 3s;
+
     &:hover {
         background-color: $primario;
         transform: scale(1.2, 1.2);
@@ -845,21 +966,26 @@ footer {
     border: 2px solid $primario;
     border-radius: 45px;
     grid-area: pie;
+
     div {
         margin: 5px 1rem 5px 1rem;
         padding: 15px;
         display: inline-block;
         width: 250px;
+
         a {
             color: black;
+
             &:hover,
             h3:hover {
                 color: $terciario;
             }
         }
+
         ul li {
             list-style-type: none;
             color: black;
+
             &:hover,
             a:hover {
                 color: $terciario;
@@ -894,7 +1020,6 @@ select {
 #titulo {
     text-align: center;
     justify-self: stretch;
-    margin-top: 160px;
 }
 
 #tituloNos {
@@ -907,10 +1032,12 @@ select {
 
 /* Map */
 
-$redes:("instagram": rgb(202, 40, 154),
-"facebook": rgb(31, 32, 119),
-"whatsapp": rgb(23, 167, 43),
-"mail": rgb(184, 0, 0));
+$redes: (
+    "instagram": rgb(202, 40, 154),
+    "facebook": rgb(31, 32, 119),
+    "whatsapp": rgb(23, 167, 43),
+    "mail": rgb(184, 0, 0)
+);
 
 /* Each */
 
@@ -918,10 +1045,12 @@ $redes:("instagram": rgb(202, 40, 154),
 $color in $redes {
     .red--#{$red} {
         color: $color;
+
         >a {
             color: $color;
         }
     }
+
     .red--#{$red}>a:hover {
         background-color: $color;
         color: white;
@@ -952,11 +1081,13 @@ $color in $redes {
     margin: 10PX 30px;
     border-radius: 50px;
     text-align: start;
+
     ul {
         list-style-type: circle;
         list-style-position: inherit;
         padding-left: 30px;
     }
+
     p {
         text-indent: 30px;
     }
@@ -979,6 +1110,7 @@ $color in $redes {
     @extend.form_ext;
     grid-area: masInfo;
     width: auto;
+
     ul li {
         list-style-type: none;
     }
@@ -1024,6 +1156,7 @@ $color in $redes {
     right: 13vw;
     top: 25px;
     transition: all 2s;
+
     &:hover {
         background-color: $secundario;
         transform: scale(1.05, 1.05);
@@ -1038,6 +1171,7 @@ $color in $redes {
     width: 410px;
     transition: all 2s;
     top: 60px;
+
     &:hover {
         background-color: $secundario;
         transform: scale(1.05, 1.05);
@@ -1051,6 +1185,7 @@ $color in $redes {
     right: 12vw;
     background-color: rgba(255, 255, 255, 0.692);
     transition: all 2s;
+
     &:hover {
         background-color: $secundario;
         transform: scale(1.05, 1.05);
@@ -1060,6 +1195,7 @@ $color in $redes {
 #imgNosUno {
     @extend.form_ext;
     top: -258px;
+
     img {
         height: 300px;
     }
@@ -1075,6 +1211,7 @@ $color in $redes {
     @extend.form_ext;
     top: -348px;
     margin-bottom: 100px;
+
     img {
         height: 300px;
     }
@@ -1085,6 +1222,7 @@ $color in $redes {
     flex-direction: column;
     gap: 20px 15px;
     align-items: center;
+
     img {
         width: 350px;
         height: 400px;
@@ -1094,6 +1232,7 @@ $color in $redes {
         border-radius: 50px;
         border: 2px solid #ffcd80;
     }
+
     .area {
         display: flex;
         flex-direction: column;
@@ -1101,6 +1240,7 @@ $color in $redes {
         border: 2px solid $secundario;
         border-radius: 8px;
     }
+
     ul {
         li {
             list-style-type: none;
@@ -1140,6 +1280,7 @@ label {
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0.3px inset #000000;
+
     div {
         min-width: 250px;
     }
@@ -1151,6 +1292,7 @@ label {
     margin-right: -5px;
     margin-left: -5px;
     row-gap: 11px;
+
     >.col,
     >[class*="col-"] {
         padding-right: 5px;
@@ -1166,6 +1308,7 @@ label {
     padding-top: 15px;
     width: 100%;
     gap: 10px;
+
     &-hijo {
         justify-content: center;
         padding: 5px;
@@ -1173,6 +1316,7 @@ label {
         border-radius: 10px;
         color: #606060;
         -webkit-text-fill-color: #606060;
+
         &:hover {
             color: white;
             -webkit-text-fill-color: white;
@@ -1193,21 +1337,25 @@ label {
         @if $car==1 {
             color: #e1306e;
         }
+
         @else if $car==2 {
             color: #3525c5;
         }
+
         @else if $car==3 {
             color: #1ca81c;
         }
+
         @else if $car==4 {
             color: #060706;
         }
+
         ;
     }
 }
 
 
-/*  Small devices (landscape phones, tablets, 576px and up) */
+/*  Small devices (landscape phones, tablets, 600px and up) */
 
 @media (min-width: 601px) and (max-width: 870px) {
     header {
@@ -1216,6 +1364,7 @@ label {
         height: 160px;
         border-radius: 3px;
         grid-area: header;
+
         h1 {
             font-size: 34px;
             width: 58%;
@@ -1225,49 +1374,63 @@ label {
             color: $primario;
         }
     }
+
     .localidades {
         left: 30%;
     }
+
     .hamburger-menu {
         top: 14px;
         position: absolute;
         left: 1px;
     }
+
     .hamburger-menu-2 {
         display: initial;
         width: 42px;
         height: 42px;
     }
+
     .hamburger-menu-1 {
         display: none;
     }
+
     .social {
         display: none;
     }
+
     .logo-img {
         padding-top: 10px;
     }
+
     .empresas {
         max-width: 100%;
     }
+
     .textoCotizacion {
         display: inline-block;
     }
+
     table {
         display: none;
     }
+
     .textArea {
         width: 500px;
     }
+
+
     .preguntas {
         width: 80%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
         div {
             width: 100%;
         }
     }
+
     .imgSeguimiento {
         max-width: 70%;
         max-height: 75%;
@@ -1278,27 +1441,32 @@ label {
 /* Celulares */
 
 @media (max-width: 600px) {
-     :root {
+    :root {
         --marquee-width: 95vw;
         --marquee-height: 16vh;
         --marquee-elements-displayed: 3;
     }
+
     .logo-img {
         max-width: 320px;
         height: 90px;
         padding: 10px;
     }
+
     main {
         padding-top: 130px;
     }
+
     .wa1,
     .whatsapp1 {
         display: none;
     }
+
     .wa2,
     .whatsapp2 {
         display: inherit;
     }
+
     header {
         position: absolute;
         width: 100%;
@@ -1306,29 +1474,59 @@ label {
         border-radius: 3px;
         grid-area: header;
     }
+
+    #menu_page {
+        width: 80%;
+        border-bottom: 2px solid #f865319c;
+        height: 90%;
+
+        img {
+            padding: 0px;
+            width: 210px;
+            height: auto;
+        }
+
+        .closebtn {
+            font-size: 70px;
+            top: -28px;
+            right: 88px;
+            left: auto;
+        }
+
+        li a {
+            font-size: 18px;
+        }
+    }
+
     .hamburger-menu {
         top: 74px;
         position: absolute;
         left: 1px;
     }
+
     .hamburger-menu-2 {
         display: initial;
         width: 42px;
         height: 42px;
     }
+
     .hamburger-menu-1 {
         display: none;
     }
+
     .animacion {
         &:hover {
             background-color: $fondo;
         }
     }
+
     .page-section .serviceContainer {
         margin-top: 80px;
         height: 106px;
+
         a {
             height: 10px;
+
             div {
                 transition: all 0s;
                 margin: 0px;
@@ -1336,23 +1534,29 @@ label {
                 height: 120px;
                 justify-content: center;
                 text-align: center;
+
                 img {
                     display: none;
                 }
+
                 h2 {
                     top: -55px;
                 }
+
                 &:hover {
                     border-radius: 10px;
                     background-color: $fondo;
+
                     h2 {
                         color: black;
                         background-color: #f86530cf;
                     }
+
                     p {
                         color: black;
                         font: bold;
                     }
+
                     img {
                         border-radius: 100px;
                     }
@@ -1360,81 +1564,131 @@ label {
             }
         }
     }
+
     .carousel-2 {
         display: inline;
+
         img {
             width: 100%;
             max-height: 500px;
             border-radius: 20px;
         }
     }
+
     .carousel-1 {
         display: none;
     }
+
     .destinos {
         margin: 0px;
     }
+
     .sucursales {
         button {
             color: black;
         }
     }
+
     .localidades {
         align-items: flex-start;
         width: 240px;
         left: 10%;
+
         li {
             width: 200px;
         }
     }
+
     .social {
         margin-right: 10px;
         justify-content: space-evenly;
         position: absolute;
         top: 91px;
         width: 78%;
+
         li img {
             width: 42px;
             height: 42px;
         }
     }
+
     nav {
         display: none;
     }
+
     .page-section {
         padding-top: 1rem;
     }
+
     .empresas .containerEmpresas {
         width: 100%;
         align-items: center;
         grid-template-columns: 150px 150px;
+
         img {
             width: 180px;
         }
     }
+
     .marquee-content li img {
         width: 80%;
         height: 80%;
     }
+
     .textoCotizacion {
         display: inline-block;
     }
+
     .imgSeguimiento {
         max-width: 90%;
         max-height: 95%;
     }
+
     table {
         display: none;
     }
+
     .textArea {
         width: 350px;
     }
+
+    .main-ayuda {
+        padding-top: 80px;
+    }
+
+    /* Page Ayuda */
+    .redes {
+        padding: 5px;
+
+        .ul-horizontal {
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+    }
+
+    .preg_y_resp {
+        padding: 2px;
+        margin: 0px;
+
+        ul li {
+            font-size: medium;
+        }
+    }
+
+    .form__info {
+        padding: 5px;
+        margin: 0px;
+    }
+
     .containerAyuda {
         grid-template-columns: 1.5fr 1fr 1fr;
         grid-template-rows: 0.75fr 0.2fr 0.5fr repeat(3, 0.75fr) auto;
         gap: 20px 15px;
         grid-template-areas: "header header header" "h2 h2 h2" "redes redes redes" "redes redes redes" "form form form" "form form form" "pie pie pie";
     }
+
     .containerNosotros {
         .form_ext {
             padding: 10px;
@@ -1447,17 +1701,21 @@ label {
             left: auto;
             position: static;
         }
+
         .area {
             z-index: 11;
         }
+
         display: flex;
         flex-direction: column;
         gap: 20px;
+
         #nosotros {
             padding: 15px;
             text-align: center;
             margin: 10px;
         }
+
         div img {
             width: 90%;
             position: static;
@@ -1467,6 +1725,8 @@ label {
             border: 2px solid #ffcd80;
         }
     }
+
+    /* Preguntas cotizacion */
     .preguntas {
         width: 90%;
         display: flex;
@@ -1474,10 +1734,12 @@ label {
         flex-wrap: wrap;
         padding: 8px;
         justify-content: center;
+
         h3 {
             width: 100%;
         }
     }
+
     .sucursales {
         display: flex;
         flex-direction: row;
@@ -1486,40 +1748,50 @@ label {
         transition: all 2s;
         gap: 8px;
         justify-content: center;
+
         .accordion-body {
             display: flex;
             flex-direction: column;
             padding: 0rem 1.25rem;
         }
+
         .accordion-button {
             width: 250px;
         }
+
         .accordion-button:not(.collapsed) {
             color: black;
             background-color: $fondo;
             box-shadow: none;
             padding: 5px;
         }
+
         .accordion-body:active {
             width: 1000px;
         }
+
         .accordion_item {
             width: 92%;
+            height: auto;
         }
+
         .accordion-button:focus {
             z-index: 3;
             outline: 0;
             box-shadow: 0 0 0 0;
             border: 0px solid white;
         }
+
         .accordion-button:not(.collapsed) {
             color: $primario;
             font-size: 220%;
         }
+
         .accordion-button:not(.collapsed)::after {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD7F52'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
             transform: rotate(-180deg);
         }
+
         div {
             iframe {
                 margin: 20px 0px;
@@ -1529,6 +1801,7 @@ label {
             }
         }
     }
+
     .accordionContainer {
         width: 100%;
         display: grid;
