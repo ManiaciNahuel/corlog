@@ -1,4 +1,4 @@
-@import "../bootstrap_sass/css/bootstrap.css";
+/* @import "../bootstrap_sass/css/bootstrap.css"; */
 @import "boostrap.scss";
 // Colores //
 $primario: #f86530;
@@ -111,12 +111,12 @@ main {
 
 :root {
     --marquee-width: 80vw;
-    --marquee-height: 40vh;
+    --marquee-height: 30vh;
     /* --marquee-elements: 12; */
     /* defined with JavaScript */
     --marquee-elements-displayed: 5;
     --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+    --marquee-animation-duration: calc(var(--marquee-elements) * 1.6s);
 }
 
 .marquee {
@@ -150,15 +150,12 @@ main {
 
 .marquee-content {
     list-style: none;
-    height: 100%;
+    height: 80%;
     display: flex;
     animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
 
 
-/* .marquee-content:hover {
-    animation-play-state: paused;
-  } */
 
 @keyframes scrolling {
     0% {
@@ -174,19 +171,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     flex-shrink: 0;
     width: var(--marquee-element-width);
     max-height: 100%;
-    font-size: calc(var(--marquee-height)*3/4);
-    /* 5rem; */
     white-space: nowrap;
 }
 
 .marquee-content li img {
     width: 100%;
-    /* height: 100%; */
     border: 2px solid #FFFFFD;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    padding: 10px;
 }
 
 @media (max-width: 600px) {
@@ -386,17 +383,6 @@ header {
 
 ul {
     padding-left: 0rem;
-}
-
-.btn-close {
-    box-sizing: content-box;
-    color: #000;
-    border: 0;
-    border-radius: 0.25rem;
-    opacity: 1;
-    width: 4rem;
-    height: 4rem;
-    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }
 
 
@@ -727,53 +713,6 @@ iframe {
 }
 
 
-/* 
-.sucursales {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    transition: all 2s;
-    gap: 8px;
-    .accordion-body {
-        display: flex;
-        flex-direction: row;
-        padding: 0rem 1.25rem;
-    }
-    .accordion_item {
-        border: 2px solid $secundario;
-        display: none;
-    }
-    div {
-        button {
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 20px 50px;
-            width: 400px;
-            p {
-                margin: 0px;
-                font-size: 20px;
-            }
-        }
-        iframe {
-            margin: 10px;
-            width: 50vw;
-            height: 450px;
-            align-self: center;
-        }
-    }
-}
-
-.accordionContainer {
-    @extend .textAlignCenter;
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-} */
-
-
 /* Arreglo del boostrap - generaba un scroll */
 
 .row {
@@ -892,11 +831,21 @@ iframe {
 }
 
 .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
     img {
         width: 100%;
         max-height: 500px;
         border-radius: 50px;
     }
+    
+}
+
+.carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
 }
 
 .carousel-2 {
@@ -909,8 +858,8 @@ iframe {
 .empresas {
     display: flex;
     flex-direction: column;
-
     .containerEmpresas {
+    margin-bottom: 40px;
         img {
             width: 250px;
             transition: background-color 3s;
